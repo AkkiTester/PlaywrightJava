@@ -9,7 +9,7 @@ public class LoginPage {
 	// Locators
 	private String username = "input[name='username']";
 	private String password = "input[name='password']";
-	private String LoginButton = " Login ";
+	private String LoginButton = "button[type='submit']";
 	
 	
 	//Constructor
@@ -37,7 +37,7 @@ public class LoginPage {
 	}
 	
 	public void ClickLoginButton() {
-		page.getByAltText(LoginButton).click();
+		page.locator(LoginButton).click();
 	}
  
 }

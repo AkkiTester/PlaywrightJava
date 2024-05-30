@@ -1,37 +1,23 @@
 package tests;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import com.microsoft.playwright.Page;
 
-import Factory.PlaywrightFactory;
-import POM.LoginPage;
+import base.BaseTest;
 
-public class LoginPageTest {
+public class LoginPageTest  extends BaseTest{
 
-	PlaywrightFactory pf;
-	Page page;
 	
-	LoginPage LoginPage;
-	
-	@BeforeTest
-	public void setup() {
-		pf = new PlaywrightFactory();
-		page = pf.initBrowser("chromium");
-		LoginPage = new LoginPage(page);
-	}
 	
 	@Test
 	public void loginPageTitleTest() {
+		LoginPage.setUsername("Admin");
+		LoginPage.setPassword("admin");
+		LoginPage.ClickLoginButton();
 		String actuleTitle = LoginPage.getLoginPageTitle();
 		Assert.assertEquals(actuleTitle,"OrangeHRM");
 		
 	}
 	
-	@AfterTest
-	public void tearDown() {
-		page.context().browser().close();
-	}
+	
 }

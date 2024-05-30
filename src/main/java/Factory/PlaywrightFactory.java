@@ -1,5 +1,10 @@
 package Factory;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserContext;
 import com.microsoft.playwright.BrowserType;
@@ -13,9 +18,11 @@ public class PlaywrightFactory {
 	Browser browser;
 	BrowserContext browserContext;
 	Page page;
+	Properties prop;
 	
-	public Page initBrowser(String browserName) {
+	public Page initBrowser(Properties prop) {
 		
+		String browserName = prop.getProperty("browser").trim();
 		System.out.println("browser name is :"+ browserName);
 		
 		playwright = Playwright.create(null);
@@ -38,11 +45,29 @@ public class PlaywrightFactory {
 		browserContext = browser.newContext();
 		
 		page = browserContext.newPage();
-		page.navigate("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		page.navigate(prop.getProperty("loginpageurl").trim());
 		
 		return page;
 		
 		
+	}
+	/***
+	 * this method is used to initialize the properties from config file
+	 */
+	public Properties init_prop() {
+		
+		try {
+			FileInputStream ip = new FileInputStream(".\\src\\test\\resources\\config\\config.properties");
+			prop = new Properties();
+			prop.load(ip);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return prop;
 	}
 
 }
