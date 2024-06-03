@@ -4,6 +4,8 @@ import java.util.Properties;
 
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 
 import com.microsoft.playwright.Page;
 
@@ -13,15 +15,16 @@ import POM.LoginPage;
 public class BaseTest {
 	PlaywrightFactory pf;
 	Page page;
-	Properties prop;
+	protected Properties prop;
 	
 	protected LoginPage LoginPage;
 	
 	@BeforeTest
-	public void setup() {
+	@Parameters("browser")
+	public void setup(@Optional ("chrome")  String  browser) {
 		pf = new PlaywrightFactory();
 		prop = pf.init_prop();
-		page = pf.initBrowser(prop);
+		page = pf.initBrowser(browser);
 		LoginPage = new LoginPage(page);
 	}
 	

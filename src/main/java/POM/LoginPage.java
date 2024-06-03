@@ -2,7 +2,7 @@ package POM;
 
 import com.microsoft.playwright.Page;
 
-public class LoginPage {
+public class LoginPage  {
 	
 	Page page;
 	

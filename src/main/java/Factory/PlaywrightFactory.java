@@ -15,34 +15,37 @@ import com.microsoft.playwright.Playwright;
 public class PlaywrightFactory {
 	
 	Playwright playwright;
-	Browser browser;
+	Browser brows;
 	BrowserContext browserContext;
 	Page page;
 	Properties prop;
 	
-	public Page initBrowser(Properties prop) {
+	public Page initBrowser(String browser) {
 		
-		String browserName = prop.getProperty("browser").trim();
+		String browserName = browser.toLowerCase();
 		System.out.println("browser name is :"+ browserName);
 		
 		playwright = Playwright.create(null);
 		
 		switch (browserName.toLowerCase()) {
 		case "chromium":
-			browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+			brows = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
 			break;
 		case "firefox":
-			browser = playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(false));
+			brows = playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(false));
 			break;
 		case "chrome":
-			browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setChannel("chrome").setHeadless(false));
+			brows = playwright.chromium().launch(new BrowserType.LaunchOptions().setChannel("chrome").setHeadless(false));
 			break;
 		
 		default:
 			System.out.println("Please pass the right browse name.....");
 		}
 		
-		browserContext = browser.newContext();
+		browserContext = brows.newContext();
+		
+		
+//		browserContext.setDefaultTimeout(20000);
 		
 		page = browserContext.newPage();
 		page.navigate(prop.getProperty("loginpageurl").trim());
