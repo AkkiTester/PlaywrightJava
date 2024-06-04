@@ -11,6 +11,10 @@ import com.microsoft.playwright.Page;
 
 import Factory.PlaywrightFactory;
 import POM.LoginPage;
+import POM.AdministratorLogin;
+import POM.MaintanancePage;
+import POM.Dashboard;
+
 
 public class BaseTest {
 	PlaywrightFactory pf;
@@ -18,6 +22,9 @@ public class BaseTest {
 	protected Properties prop;
 	
 	protected LoginPage LoginPage;
+	protected AdministratorLogin AdministratorLogin;
+	protected MaintanancePage MaintanancePage;
+	protected Dashboard Dashboard;
 	
 	@BeforeTest
 	@Parameters("browser")
@@ -26,6 +33,10 @@ public class BaseTest {
 		prop = pf.init_prop();
 		page = pf.initBrowser(browser);
 		LoginPage = new LoginPage(page);
+		AdministratorLogin = new AdministratorLogin(page);
+		MaintanancePage = new MaintanancePage(page);
+		Dashboard = new Dashboard(page);
+		
 	}
 	
 	@AfterTest

@@ -5,20 +5,22 @@ import org.testng.annotations.Test;
 
 import base.BaseTest;
 
-public class LoginPageTest  extends BaseTest{
+public class LoginTestInvalidID  extends BaseTest{
 
 	
+	
+	
 	@Test
-	public void loginTestValidIDPass() {
-		LoginPage.setUsername(prop.getProperty("username").trim());
+	public void loginTestInValidIDPass() {
+		LoginPage.setUsername("invalid");
 		LoginPage.setPassword(prop.getProperty("password").trim());
 		LoginPage.ClickLoginButton();
 		String pageurl = LoginPage.getLoginPageUrl();
-		Assert.assertTrue(pageurl.contains("dashboard"), "URL does not contain 'dashboard'");
+		Assert.assertTrue(pageurl.contains("login"), "URL does not contain 'dashboard'");
 
 		
 	}
 	
 	
-	
 }
+

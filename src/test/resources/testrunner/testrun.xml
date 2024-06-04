@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
 <suite name="DeomSuite">
-	
+	<!-- Available browsers:"chrome", "firefox", "ie","edge" -->
 	<parameter name="browser" value="chrome" />
 	
     <test name="LoginTest">
@@ -9,5 +9,14 @@
             <class name="tests.LoginPageTest"/>
         </classes>
     </test>
-    
+    <test name="LoginTestInvalidID">
+        <classes>
+            <class name="tests.LoginTestInvalidID"/>
+        </classes>
+    </test>
+    <test name="LoginAdministrator">
+        <classes>
+            <class name="tests.AdministratorLoginTest"/>
+        </classes>
+    </test>
 </suite>
