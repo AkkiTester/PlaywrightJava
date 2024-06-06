@@ -11,14 +11,28 @@ import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 
+import POM.AdministratorLogin;
+import POM.Dashboard;
+import POM.LoginPage;
+import POM.MaintanancePage;
+import reader.Configreader;
+import reader.ExcelFileReader;
+
 //Initial Playwright
 public class PlaywrightFactory {
 	
 	Playwright playwright;
 	Browser brows;
 	BrowserContext browserContext;
-	Page page;
-	Properties prop;
+	protected Page page;
+//	protected Properties prop;
+	
+	protected LoginPage LoginPage;
+	protected AdministratorLogin AdministratorLogin;
+	protected MaintanancePage MaintanancePage;
+	protected Dashboard Dashboard;
+	public Configreader prop;
+	public ExcelFileReader excel;
 	
 	public Page initBrowser(String browser) {
 		
@@ -45,10 +59,10 @@ public class PlaywrightFactory {
 		browserContext = brows.newContext();
 		
 		
-//		browserContext.setDefaultTimeout(20000);
+		browserContext.setDefaultTimeout(40000);
 		
 		page = browserContext.newPage();
-		page.navigate(prop.getProperty("loginpageurl").trim());
+		page.navigate(prop.getProperty("loginpageurl"));
 		
 		return page;
 		
@@ -57,20 +71,20 @@ public class PlaywrightFactory {
 	/***
 	 * this method is used to initialize the properties from config file
 	 */
-	public Properties init_prop() {
-		
-		try {
-			FileInputStream ip = new FileInputStream(".\\src\\test\\resources\\config\\config.properties");
-			prop = new Properties();
-			prop.load(ip);
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return prop;
-	}
+//	public Properties init_prop() {
+//		
+//		try {
+//			FileInputStream ip = new FileInputStream(".\\src\\test\\resources\\config\\config.properties");
+//			
+//			prop.load(ip);
+//		} catch (FileNotFoundException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		return prop;
+//	}
 
 }

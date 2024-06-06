@@ -1,10 +1,17 @@
 package POM;
 
+
+
+import java.util.Properties;
+
 import com.microsoft.playwright.Page;
 
-public class LoginPage  {
+import Factory.PlaywrightFactory;
+import reader.Configreader;
+
+public class LoginPage  extends PlaywrightFactory{
 	
-	Page page;
+	
 	
 	// Locators
 	private String username = "input[name='username']";
@@ -15,6 +22,7 @@ public class LoginPage  {
 	//Constructor
 	public LoginPage(Page page) {
 		this.page = page;
+		prop = new Configreader();
 	}
 	
 	// page methods:
@@ -28,16 +36,33 @@ public class LoginPage  {
 		return page.url();
 	}
 	
-	public void setUsername(String Username) {
-		page.fill(username, Username);
+	public void setUsernameDdt(String name) {
+//		String userName = prop.getProperty(name);
+		page.fill(username,name);
 	}
 	
-	public void setPassword(String Password) {
+	public void setPasswordDdt(String pass) {
+//		String Password = prop.getProperty(pass);
+		page.fill(password, pass);
+	}
+	
+	public void setUsername() {
+		String userName = prop.getProperty("username").trim();
+		page.fill(username,userName);
+	}
+	
+	public void setPassword() {
+		String Password = prop.getProperty("password").trim();
 		page.fill(password, Password);
 	}
 	
 	public void ClickLoginButton() {
 		page.locator(LoginButton).click();
+	}
+	
+	public void ClickLogout() {
+		page.locator("//span[@class='oxd-userdropdown-tab']").click();
+		page.locator("//a[normalize-space()='Logout']").click();
 	}
  
 }

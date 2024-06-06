@@ -7,11 +7,11 @@ import base.BaseTest;
 
 public class LoginPageTest  extends BaseTest{
 
-	
+
 	@Test
 	public void loginTestValidIDPass() {
-		LoginPage.setUsername(prop.getProperty("username").trim());
-		LoginPage.setPassword(prop.getProperty("password").trim());
+		LoginPage.setUsername();
+		LoginPage.setPassword();
 		LoginPage.ClickLoginButton();
 		String pageurl = LoginPage.getLoginPageUrl();
 		Assert.assertTrue(pageurl.contains("dashboard"), "URL does not contain 'dashboard'");

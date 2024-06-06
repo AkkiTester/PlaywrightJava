@@ -9,8 +9,8 @@ public class AdministratorLoginTest extends BaseTest{
 
 	@Test
 	public void loginTestValidIDPass() {
-		LoginPage.setUsername(prop.getProperty("username").trim());
-		LoginPage.setPassword(prop.getProperty("password").trim());
+		LoginPage.setUsername();
+		LoginPage.setPassword();
 		LoginPage.ClickLoginButton();
 		Dashboard.ClickMaintenance();
 		AdministratorLogin.Enterpassword();
