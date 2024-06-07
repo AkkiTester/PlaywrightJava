@@ -19,20 +19,6 @@ import Factory.PlaywrightFactory;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * ExcelFileReader class for reading and managing data stored in Excel
- * spreadsheets.
- *
- * @author Remosys Testing Team;
- *
- *         Usage: 1. Create an instance of ExcelFileReader to work with Excel
- *         files. 2. Retrieve data from specific cells or rows using methods
- *         like getCellValue or getRowCount. 4. Handle exceptions that may occur
- *         during file loading or data retrieval.
- *
- */
-
-
 public class ExcelFileReader extends PlaywrightFactory {
 	FileInputStream stream;
 	XSSFWorkbook workBook;
