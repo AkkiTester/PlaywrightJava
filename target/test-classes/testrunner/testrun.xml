@@ -24,4 +24,9 @@
             <class name="tests.LoginDDT"/>
         </classes>
     </test>
+    <test name="Get Api Test">
+        <classes>
+            <class name="tests.GetApi"/>
+        </classes>
+    </test>
 </suite>

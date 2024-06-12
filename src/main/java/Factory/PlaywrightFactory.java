@@ -36,6 +36,8 @@ public class PlaywrightFactory {
 	
 	public Page initBrowser(String browser) {
 		
+		
+		
 		String browserName = browser.toLowerCase();
 		System.out.println("browser name is :"+ browserName);
 		
@@ -86,5 +88,7 @@ public class PlaywrightFactory {
 //		}
 //		return prop;
 //	}
+	
+	
 
 }

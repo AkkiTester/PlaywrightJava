@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-DeomSuite" class="navigator-link">
+              <span class="suite-name border-failed">DeomSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\ADMIN\AppData\Local\Temp\testng-eclipse-654323440\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-DeomSuite" class="navigator-link ">
+                    <span>C:\Users\ADMIN\eclipse-workspace\PlaywrightPOM\src\test\resources\testrunner\testrun.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                  <a href="#" panel-name="testlist-DeomSuite" class="navigator-link ">
+                    <span class="test-stats">5 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-DeomSuite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-DeomSuite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-DeomSuite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-DeomSuite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-DeomSuite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,21 +92,65 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-DeomSuite" class="hide-methods failed suite-DeomSuite"> (hide)</a> <!-- hide-methods failed suite-DeomSuite -->
+                      <a href="#" panel-name="suite-DeomSuite" class="show-methods failed suite-DeomSuite"> (show)</a> <!-- show-methods failed suite-DeomSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-DeomSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DeomSuite" title="tests.LoginTestInvalidID" class="method navigator-link" hash-for-method="loginTestInValidIDPass">loginTestInValidIDPass</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-DeomSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-DeomSuite" class="hide-methods passed suite-DeomSuite"> (hide)</a> <!-- hide-methods passed suite-DeomSuite -->
+                      <a href="#" panel-name="suite-DeomSuite" class="show-methods passed suite-DeomSuite"> (show)</a> <!-- show-methods passed suite-DeomSuite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-DeomSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="tests.GetApi" class="method navigator-link" hash-for-method="getUserApiTest">getUserApiTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-DeomSuite" title="tests.GetApi" class="method navigator-link" hash-for-method="getUserApiTest">getUserApiTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DeomSuite" title="tests.LoginPageTest" class="method navigator-link" hash-for-method="loginTestValidIDPass">loginTestValidIDPass</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DeomSuite" title="tests.AdministratorLoginTest" class="method navigator-link" hash-for-method="loginTestValidIDPass">loginTestValidIDPass</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DeomSuite" title="tests.LoginDDT" class="method navigator-link" hash-for-method="loginTestValidIDPass(Admina, Admina, login, Invalid ID and Pass)">loginTestValidIDPass(Admina, Admina, login, Invalid ID and Pass)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DeomSuite" title="tests.LoginDDT" class="method navigator-link" hash-for-method="loginTestValidIDPass(Admin, admin, login, Valid ID Invalid Pass)">loginTestValidIDPass(Admin, admin, login, Valid ID Invalid Pass)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DeomSuite" title="tests.LoginDDT" class="method navigator-link" hash-for-method="loginTestValidIDPass(AAAA, admin123, login, Invalid ID Valid Pass)">loginTestValidIDPass(AAAA, admin123, login, Invalid ID Valid Pass)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DeomSuite" title="tests.LoginDDT" class="method navigator-link" hash-for-method="loginTestValidIDPass(Admin, admin123, dashboard, Valid ID and Pass)">loginTestValidIDPass(Admin, admin123, dashboard, Valid ID and Pass)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-DeomSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,8 +161,58 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-DeomSuite" class="panel DeomSuite">
+          <div class="suite-DeomSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.LoginTestInvalidID</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTestInValidIDPass">
+                  </a> <!-- loginTestInValidIDPass -->
+                  <span class="method-name">loginTestInValidIDPass</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at tests.LoginTestInvalidID.loginTestInValidIDPass(LoginTestInvalidID.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DeomSuite-class-failed -->
+          <div class="suite-DeomSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTestValidIDPass">
+                  </a> <!-- loginTestValidIDPass -->
+                  <span class="method-name">loginTestValidIDPass</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DeomSuite-class-passed -->
+          <div class="suite-DeomSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.AdministratorLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTestValidIDPass">
+                  </a> <!-- loginTestValidIDPass -->
+                  <span class="method-name">loginTestValidIDPass</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DeomSuite-class-passed -->
+          <div class="suite-DeomSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">tests.GetApi</span>
@@ -132,103 +226,334 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-DeomSuite-class-passed -->
+          <div class="suite-DeomSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.LoginDDT</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTestValidIDPass(Admina, Admina, login, Invalid ID and Pass)">
+                  </a> <!-- loginTestValidIDPass(Admina, Admina, login, Invalid ID and Pass) -->
+                  <span class="method-name">loginTestValidIDPass</span>
+                  <span class="parameters">(Admina,Admina,login,Invalid ID and Pass)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTestValidIDPass(Admin, admin, login, Valid ID Invalid Pass)">
+                  </a> <!-- loginTestValidIDPass(Admin, admin, login, Valid ID Invalid Pass) -->
+                  <span class="method-name">loginTestValidIDPass</span>
+                  <span class="parameters">(Admin,admin,login,Valid ID Invalid Pass)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTestValidIDPass(AAAA, admin123, login, Invalid ID Valid Pass)">
+                  </a> <!-- loginTestValidIDPass(AAAA, admin123, login, Invalid ID Valid Pass) -->
+                  <span class="method-name">loginTestValidIDPass</span>
+                  <span class="parameters">(AAAA,admin123,login,Invalid ID Valid Pass)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTestValidIDPass(Admin, admin123, dashboard, Valid ID and Pass)">
+                  </a> <!-- loginTestValidIDPass(Admin, admin123, dashboard, Valid ID and Pass) -->
+                  <span class="method-name">loginTestValidIDPass</span>
+                  <span class="parameters">(Admin,admin123,dashboard,Valid ID and Pass)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DeomSuite-class-passed -->
+        </div> <!-- panel DeomSuite -->
+        <div panel-name="test-xml-DeomSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ADMIN\AppData\Local\Temp\testng-eclipse-654323440\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\ADMIN\eclipse-workspace\PlaywrightPOM\src\test\resources\testrunner\testrun.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite name=&quot;DeomSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;LoginTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.LoginPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LoginTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;LoginTestInvalidID&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.LoginTestInvalidID&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LoginTestInvalidID --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;LoginAdministrator&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.AdministratorLoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LoginAdministrator --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;LoginDdt&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.LoginDDT&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LoginDdt --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Get Api Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.GetApi&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Get Api Test --&gt;
+&lt;/suite&gt; &lt;!-- DeomSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-DeomSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for DeomSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">LoginTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">LoginTestInvalidID (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">LoginAdministrator (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">LoginDdt (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Get Api Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-DeomSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for DeomSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-DeomSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for DeomSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_DeomSuite');
+function tableData_DeomSuite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'getUserApiTest')
-data.setCell(0, 2, 'tests.GetApi')
-data.setCell(0, 3, 1039);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(0, 1, 'loginTestValidIDPass')
+data.setCell(0, 2, 'tests.AdministratorLoginTest')
+data.setCell(0, 3, 7236);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginTestValidIDPass')
+data.setCell(1, 2, 'tests.LoginDDT')
+data.setCell(1, 3, 4675);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loginTestInValidIDPass')
+data.setCell(2, 2, 'tests.LoginTestInvalidID')
+data.setCell(2, 3, 2496);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'loginTestValidIDPass')
+data.setCell(3, 2, 'tests.LoginDDT')
+data.setCell(3, 3, 2150);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'loginTestValidIDPass')
+data.setCell(4, 2, 'tests.LoginDDT')
+data.setCell(4, 3, 1879);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'loginTestValidIDPass')
+data.setCell(5, 2, 'tests.LoginPageTest')
+data.setCell(5, 3, 1723);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'loginTestValidIDPass')
+data.setCell(6, 2, 'tests.LoginDDT')
+data.setCell(6, 3, 1479);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'getUserApiTest')
+data.setCell(7, 2, 'tests.GetApi')
+data.setCell(7, 3, 948);
+window.suiteTableData['DeomSuite']= { tableData: data, tableDiv: 'times-div-DeomSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <div id="times-div-DeomSuite">
+              </div> <!-- times-div-DeomSuite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-DeomSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for DeomSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-DeomSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-DeomSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginDDT</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.GetApi</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupSuite</span>
+                <span class="method-start">634 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">654 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">loginTestValidIDPass</span>
+                <span class="method-start">15486 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshotOnFailure([TestResult name=loginTestValidIDPass status=SUCCESS method=LoginPageTest.loginTestValidIDPass()[pri...)</span>
+                <span class="method-start">17212 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">17223 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginTestInvalidID</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">17899 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginTestInValidIDPass</span>
+                <span class="method-start">28291 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshotOnFailure([TestResult name=loginTestInValidIDPass status=FAILURE method=LoginTestInvalidID.loginTestInValidIDP...)</span>
+                <span class="method-start">30790 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">33274 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.AdministratorLoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">33903 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">loginTestValidIDPass</span>
+                <span class="method-start">45312 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshotOnFailure([TestResult name=loginTestValidIDPass status=SUCCESS method=AdministratorLoginTest.loginTestValidIDP...)</span>
+                <span class="method-start">52551 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">52556 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginDDT</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">53281 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">loginTestValidIDPass(Admin, admin123, dashboard, Valid ID and Pass)</span>
+                <span class="method-start">61991 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshotOnFailure([TestResult name=loginTestValidIDPass status=SUCCESS method=LoginDDT.loginTestValidIDPass(java.lang....)</span>
+                <span class="method-start">66668 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">loginTestValidIDPass(Admin, admin, login, Valid ID Invalid Pass)</span>
+                <span class="method-start">66670 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshotOnFailure([TestResult name=loginTestValidIDPass status=SUCCESS method=LoginDDT.loginTestValidIDPass(java.lang....)</span>
+                <span class="method-start">68823 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">loginTestValidIDPass(AAAA, admin123, login, Invalid ID Valid Pass)</span>
+                <span class="method-start">68824 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshotOnFailure([TestResult name=loginTestValidIDPass status=SUCCESS method=LoginDDT.loginTestValidIDPass(java.lang....)</span>
+                <span class="method-start">70305 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">loginTestValidIDPass(Admina, Admina, login, Invalid ID and Pass)</span>
+                <span class="method-start">70307 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshotOnFailure([TestResult name=loginTestValidIDPass status=SUCCESS method=LoginDDT.loginTestValidIDPass(java.lang....)</span>
+                <span class="method-start">72190 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">72193 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">tests.GetApi</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">72758 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">getUserApiTest</span>
-                <span class="method-start">4974 ms</span>
+                <span class="method-start">73262 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginDDT</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDownSuite</span>
+                <span class="method-start">74217 ms</span>
+              </div> <!-- configuration-suite after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.GetApi</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDownSuite</span>
+                <span class="method-start">74653 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

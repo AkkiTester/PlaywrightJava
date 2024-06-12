@@ -5,6 +5,9 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+
 import base.BaseTest;
 
 public class LoginDDT  extends BaseTest{
@@ -32,11 +35,21 @@ public class LoginDDT  extends BaseTest{
 	}
 	
 	@Test(dataProvider ="LoginData")
-	public void loginTestValidIDPass(String username, String password ,String test) {
+	public void loginTestValidIDPass(String username, String password ,String test,String testname) {
+		createTest("Login DDT Test case for "+testname);
+		log(Status.INFO, "Entering Username ");
 		LoginPage.setUsernameDdt(username);
+		log(Status.INFO, "Entering Password ");
 		LoginPage.setPasswordDdt(password);
+		log(Status.INFO, "Click On Login Button ");
 		LoginPage.ClickLoginButton();
 		String pageurl = LoginPage.getLoginPageUrl();
+		if (pageurl.contains(test)) {
+			log(Status.PASS, "Login DDT Test case for "+testname,ExtentColor.GREEN);
+        } else {
+        	log(Status.FAIL, "Login DDT Test case for "+testname, ExtentColor.RED);
+//            log(Status.FAIL,  ("Login DDT Test case for "+testname ));
+        }
 		Assert.assertTrue(pageurl.contains(test), "URL does not contain 'dashboard'");
 		try {
 //			System.out.println(test);
