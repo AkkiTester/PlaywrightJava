@@ -31,8 +31,9 @@ import POM.Dashboard;
 
 public class BaseTest extends PlaywrightFactory{
 	protected static ExtentReports extent;
+	private static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
 //	private static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
-    protected static ExtentTest test;
+//    protected static ExtentTest test;
     static Page page;
 	
 	
@@ -59,22 +60,33 @@ public class BaseTest extends PlaywrightFactory{
 	
 	// Static method to create a new test case in Extent Reports
     public static ExtentTest createTest(String testName) {
-        test = extent.createTest(testName);
-        return test;
+    	ExtentTest extentTest = extent.createTest(testName);
+    	test.set(extentTest);
+    	return extentTest;
+//        test = extent.createTest(testName);
+//        return test;
     }
 
     // Static method to log messages to Extent Reports
     public static void log(Status status, String message) {
-        if (test != null) {
-            test.log(status, message);
+    	ExtentTest extentTest = test.get();
+        if (extentTest != null) {
+            extentTest.log(status, message);
         }
+//    	if (test != null) {
+//            test.log(status, message);
+//        }
     }
     
  // Static method to log messages to Extent Reports with specified color
     public static void log(Status status, String message, ExtentColor color) {
-        if (test != null) {
-            test.log(status, MarkupHelper.createLabel(message, color));
+    	ExtentTest extentTest = test.get();
+        if (extentTest != null) {
+            extentTest.log(status, MarkupHelper.createLabel(message, color));
         }
+//    	if (test != null) {
+//            test.log(status, MarkupHelper.createLabel(message, color));
+//        }
     }
 		
 	@BeforeTest
@@ -98,12 +110,22 @@ public class BaseTest extends PlaywrightFactory{
 	
 	@AfterMethod
     public void captureScreenshotOnFailure(ITestResult result) {
-        if (result.getStatus() == ITestResult.FAILURE) {
-        	String testName = result.getName();
-        	
-        	String path =captureSS(testName) ;
-    		test.addScreenCaptureFromPath(path);
+		if (result.getStatus() == ITestResult.FAILURE) {
+            String testName = result.getName();
+            String path = captureSS(testName);
+            try {
+                test.get().addScreenCaptureFromPath(path);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
+		
+//        if (result.getStatus() == ITestResult.FAILURE) {
+//        	String testName = result.getName();
+//        	
+//        	String path =captureSS(testName) ;
+//    		test.addScreenCaptureFromPath(path);
+//        }
     }
 	
 	public String captureSS(String fileName) {

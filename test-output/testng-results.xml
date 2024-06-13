@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
+<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-12T18:48:25 IST" name="DeomSuite" finished-at="2024-06-12T18:49:38 IST" duration-ms="73575">
+  <suite started-at="2024-06-13T19:39:38 IST" name="DeomSuite" finished-at="2024-06-13T19:40:54 IST" duration-ms="76332">
     <groups>
     </groups>
-    <test started-at="2024-06-12T18:48:25 IST" name="LoginTest" finished-at="2024-06-12T18:48:42 IST" duration-ms="17224">
+    <test started-at="2024-06-13T19:39:38 IST" name="LoginTest" finished-at="2024-06-13T19:39:57 IST" duration-ms="18633">
       <class name="tests.LoginPageTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.LoginPageTest@7ce026d3]" started-at="2024-06-12T18:48:25 IST" name="setup" finished-at="2024-06-12T18:48:39 IST" duration-ms="14690" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.LoginPageTest@7ce026d3]" started-at="2024-06-13T19:39:38 IST" name="setup" finished-at="2024-06-13T19:39:54 IST" duration-ms="15759" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTestValidIDPass()[pri:0, instance:tests.LoginPageTest@7ce026d3]" started-at="2024-06-12T18:48:39 IST" name="loginTestValidIDPass" finished-at="2024-06-12T18:48:41 IST" duration-ms="1723" status="PASS">
+        <test-method signature="loginTestValidIDPass()[pri:0, instance:tests.LoginPageTest@7ce026d3]" started-at="2024-06-13T19:39:54 IST" name="loginTestValidIDPass" finished-at="2024-06-13T19:39:55 IST" duration-ms="1422" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestValidIDPass -->
-        <test-method is-config="true" signature="captureScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginPageTest@7ce026d3]" started-at="2024-06-12T18:48:41 IST" name="captureScreenshotOnFailure" finished-at="2024-06-12T18:48:41 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="captureScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginPageTest@7ce026d3]" started-at="2024-06-13T19:39:55 IST" name="captureScreenshotOnFailure" finished-at="2024-06-13T19:39:55 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,15 +33,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshotOnFailure -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginPageTest@7ce026d3]" started-at="2024-06-12T18:48:41 IST" name="tearDown" finished-at="2024-06-12T18:48:42 IST" duration-ms="638" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginPageTest@7ce026d3]" started-at="2024-06-13T19:39:55 IST" name="tearDown" finished-at="2024-06-13T19:39:57 IST" duration-ms="1356" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.LoginPageTest -->
     </test> <!-- LoginTest -->
-    <test started-at="2024-06-12T18:48:42 IST" name="LoginTestInvalidID" finished-at="2024-06-12T18:48:58 IST" duration-ms="15993">
+    <test started-at="2024-06-13T19:39:57 IST" name="LoginTestInvalidID" finished-at="2024-06-13T19:40:15 IST" duration-ms="18093">
       <class name="tests.LoginTestInvalidID">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.LoginTestInvalidID@70cf32e3]" started-at="2024-06-12T18:48:42 IST" name="setup" finished-at="2024-06-12T18:48:52 IST" duration-ms="10390" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.LoginTestInvalidID@70cf32e3]" started-at="2024-06-13T19:39:57 IST" name="setup" finished-at="2024-06-13T19:40:08 IST" duration-ms="11156" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -52,7 +52,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTestInValidIDPass()[pri:0, instance:tests.LoginTestInvalidID@70cf32e3]" started-at="2024-06-12T18:48:52 IST" name="loginTestInValidIDPass" finished-at="2024-06-12T18:48:55 IST" duration-ms="2496" status="FAIL">
+        <test-method signature="loginTestInValidIDPass()[pri:0, instance:tests.LoginTestInvalidID@70cf32e3]" started-at="2024-06-13T19:40:08 IST" name="loginTestInValidIDPass" finished-at="2024-06-13T19:40:10 IST" duration-ms="2481" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -96,7 +96,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestInValidIDPass -->
-        <test-method is-config="true" signature="captureScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginTestInvalidID@70cf32e3]" started-at="2024-06-12T18:48:55 IST" name="captureScreenshotOnFailure" finished-at="2024-06-12T18:48:57 IST" duration-ms="2484" status="PASS">
+        <test-method is-config="true" signature="captureScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginTestInvalidID@70cf32e3]" started-at="2024-06-13T19:40:10 IST" name="captureScreenshotOnFailure" finished-at="2024-06-13T19:40:14 IST" duration-ms="3277" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -107,15 +107,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshotOnFailure -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTestInvalidID@70cf32e3]" started-at="2024-06-12T18:48:57 IST" name="tearDown" finished-at="2024-06-12T18:48:58 IST" duration-ms="617" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTestInvalidID@70cf32e3]" started-at="2024-06-13T19:40:14 IST" name="tearDown" finished-at="2024-06-13T19:40:15 IST" duration-ms="1167" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.LoginTestInvalidID -->
     </test> <!-- LoginTestInvalidID -->
-    <test started-at="2024-06-12T18:48:58 IST" name="LoginAdministrator" finished-at="2024-06-12T18:49:17 IST" duration-ms="19370">
+    <test started-at="2024-06-13T19:40:15 IST" name="LoginAdministrator" finished-at="2024-06-13T19:40:33 IST" duration-ms="18681">
       <class name="tests.AdministratorLoginTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.AdministratorLoginTest@6c4906d3]" started-at="2024-06-12T18:48:58 IST" name="setup" finished-at="2024-06-12T18:49:09 IST" duration-ms="11408" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.AdministratorLoginTest@6c4906d3]" started-at="2024-06-13T19:40:15 IST" name="setup" finished-at="2024-06-13T19:40:26 IST" duration-ms="11504" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -126,11 +126,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTestValidIDPass()[pri:0, instance:tests.AdministratorLoginTest@6c4906d3]" started-at="2024-06-12T18:49:09 IST" name="loginTestValidIDPass" finished-at="2024-06-12T18:49:16 IST" duration-ms="7236" status="PASS">
+        <test-method signature="loginTestValidIDPass()[pri:0, instance:tests.AdministratorLoginTest@6c4906d3]" started-at="2024-06-13T19:40:26 IST" name="loginTestValidIDPass" finished-at="2024-06-13T19:40:33 IST" duration-ms="6415" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestValidIDPass -->
-        <test-method is-config="true" signature="captureScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.AdministratorLoginTest@6c4906d3]" started-at="2024-06-12T18:49:16 IST" name="captureScreenshotOnFailure" finished-at="2024-06-12T18:49:16 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="captureScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.AdministratorLoginTest@6c4906d3]" started-at="2024-06-13T19:40:33 IST" name="captureScreenshotOnFailure" finished-at="2024-06-13T19:40:33 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -141,15 +141,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshotOnFailure -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AdministratorLoginTest@6c4906d3]" started-at="2024-06-12T18:49:16 IST" name="tearDown" finished-at="2024-06-12T18:49:17 IST" duration-ms="715" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AdministratorLoginTest@6c4906d3]" started-at="2024-06-13T19:40:33 IST" name="tearDown" finished-at="2024-06-13T19:40:33 IST" duration-ms="747" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.AdministratorLoginTest -->
     </test> <!-- LoginAdministrator -->
-    <test started-at="2024-06-12T18:49:17 IST" name="LoginDdt" finished-at="2024-06-12T18:49:37 IST" duration-ms="19472">
+    <test started-at="2024-06-13T19:40:33 IST" name="LoginTestDDT" finished-at="2024-06-13T19:40:54 IST" duration-ms="20840">
       <class name="tests.LoginDDT">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.LoginDDT@17bffc17]" started-at="2024-06-12T18:49:17 IST" name="setup" finished-at="2024-06-12T18:49:26 IST" duration-ms="8693" status="PASS">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:tests.LoginDDT@17bffc17]" started-at="2024-06-13T19:39:37 IST" name="setupSuite" finished-at="2024-06-13T19:39:38 IST" duration-ms="680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.LoginDDT@17bffc17]" started-at="2024-06-13T19:40:33 IST" name="setup" finished-at="2024-06-13T19:40:44 IST" duration-ms="10152" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -160,7 +164,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTestValidIDPass(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginDDT@17bffc17]" started-at="2024-06-12T18:49:26 IST" name="loginTestValidIDPass" data-provider="LoginData" finished-at="2024-06-12T18:49:31 IST" duration-ms="4675" status="PASS">
+        <test-method signature="loginTestValidIDPass(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginDDT@17bffc17]" started-at="2024-06-13T19:40:44 IST" name="loginTestValidIDPass" data-provider="LoginData" finished-at="2024-06-13T19:40:48 IST" duration-ms="4591" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -186,7 +190,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestValidIDPass -->
-        <test-method is-config="true" signature="captureScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginDDT@17bffc17]" started-at="2024-06-12T18:49:31 IST" name="captureScreenshotOnFailure" finished-at="2024-06-12T18:49:31 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="captureScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginDDT@17bffc17]" started-at="2024-06-13T19:40:48 IST" name="captureScreenshotOnFailure" finished-at="2024-06-13T19:40:48 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -197,7 +201,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshotOnFailure -->
-        <test-method signature="loginTestValidIDPass(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginDDT@17bffc17]" started-at="2024-06-12T18:49:31 IST" name="loginTestValidIDPass" data-provider="LoginData" finished-at="2024-06-12T18:49:33 IST" duration-ms="2150" status="PASS">
+        <test-method signature="loginTestValidIDPass(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginDDT@17bffc17]" started-at="2024-06-13T19:40:48 IST" name="loginTestValidIDPass" data-provider="LoginData" finished-at="2024-06-13T19:40:50 IST" duration-ms="1673" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -223,7 +227,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestValidIDPass -->
-        <test-method is-config="true" signature="captureScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginDDT@17bffc17]" started-at="2024-06-12T18:49:33 IST" name="captureScreenshotOnFailure" finished-at="2024-06-12T18:49:33 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="captureScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginDDT@17bffc17]" started-at="2024-06-13T19:40:50 IST" name="captureScreenshotOnFailure" finished-at="2024-06-13T19:40:50 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -234,7 +238,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshotOnFailure -->
-        <test-method signature="loginTestValidIDPass(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginDDT@17bffc17]" started-at="2024-06-12T18:49:33 IST" name="loginTestValidIDPass" data-provider="LoginData" finished-at="2024-06-12T18:49:34 IST" duration-ms="1479" status="PASS">
+        <test-method signature="loginTestValidIDPass(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginDDT@17bffc17]" started-at="2024-06-13T19:40:50 IST" name="loginTestValidIDPass" data-provider="LoginData" finished-at="2024-06-13T19:40:51 IST" duration-ms="1336" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -260,7 +264,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestValidIDPass -->
-        <test-method is-config="true" signature="captureScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginDDT@17bffc17]" started-at="2024-06-12T18:49:34 IST" name="captureScreenshotOnFailure" finished-at="2024-06-12T18:49:34 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="captureScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginDDT@17bffc17]" started-at="2024-06-13T19:40:51 IST" name="captureScreenshotOnFailure" finished-at="2024-06-13T19:40:51 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -271,7 +275,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshotOnFailure -->
-        <test-method signature="loginTestValidIDPass(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginDDT@17bffc17]" started-at="2024-06-12T18:49:34 IST" name="loginTestValidIDPass" data-provider="LoginData" finished-at="2024-06-12T18:49:36 IST" duration-ms="1879" status="PASS">
+        <test-method signature="loginTestValidIDPass(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginDDT@17bffc17]" started-at="2024-06-13T19:40:51 IST" name="loginTestValidIDPass" data-provider="LoginData" finished-at="2024-06-13T19:40:53 IST" duration-ms="1737" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -297,7 +301,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestValidIDPass -->
-        <test-method is-config="true" signature="captureScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginDDT@17bffc17]" started-at="2024-06-12T18:49:36 IST" name="captureScreenshotOnFailure" finished-at="2024-06-12T18:49:36 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="captureScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginDDT@17bffc17]" started-at="2024-06-13T19:40:53 IST" name="captureScreenshotOnFailure" finished-at="2024-06-13T19:40:53 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -308,41 +312,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshotOnFailure -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginDDT@17bffc17]" started-at="2024-06-12T18:49:36 IST" name="tearDown" finished-at="2024-06-12T18:49:37 IST" duration-ms="558" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginDDT@17bffc17]" started-at="2024-06-13T19:40:53 IST" name="tearDown" finished-at="2024-06-13T19:40:54 IST" duration-ms="1281" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.LoginDDT -->
-    </test> <!-- LoginDdt -->
-    <test started-at="2024-06-12T18:49:37 IST" name="Get Api Test" finished-at="2024-06-12T18:49:38 IST" duration-ms="1455">
-      <class name="tests.LoginDDT">
-        <test-method is-config="true" signature="setupSuite()[pri:0, instance:tests.LoginDDT@17bffc17]" started-at="2024-06-12T18:48:24 IST" name="setupSuite" finished-at="2024-06-12T18:48:25 IST" duration-ms="633" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupSuite -->
-        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:tests.LoginDDT@17bffc17]" started-at="2024-06-12T18:49:38 IST" name="tearDownSuite" finished-at="2024-06-12T18:49:39 IST" duration-ms="436" status="PASS">
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:tests.LoginDDT@17bffc17]" started-at="2024-06-13T19:40:54 IST" name="tearDownSuite" finished-at="2024-06-13T19:40:55 IST" duration-ms="683" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownSuite -->
       </class> <!-- tests.LoginDDT -->
-      <class name="tests.GetApi">
-        <test-method is-config="true" signature="setupSuite()[pri:0, instance:tests.GetApi@55cb6996]" started-at="2024-06-12T18:48:25 IST" name="setupSuite" finished-at="2024-06-12T18:48:25 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupSuite -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.GetApi@55cb6996]" started-at="2024-06-12T18:49:37 IST" name="setup" finished-at="2024-06-12T18:49:37 IST" duration-ms="503" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="getUserApiTest()[pri:0, instance:tests.GetApi@55cb6996]" started-at="2024-06-12T18:49:37 IST" name="getUserApiTest" finished-at="2024-06-12T18:49:38 IST" duration-ms="948" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getUserApiTest -->
-        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:tests.GetApi@55cb6996]" started-at="2024-06-12T18:49:39 IST" name="tearDownSuite" finished-at="2024-06-12T18:49:39 IST" duration-ms="88" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownSuite -->
-      </class> <!-- tests.GetApi -->
-    </test> <!-- Get Api Test -->
+    </test> <!-- LoginTestDDT -->
   </suite> <!-- DeomSuite -->
 </testng-results>

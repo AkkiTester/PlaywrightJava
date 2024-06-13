@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="DeomSuite" parallel="tests" thread-count="10">
+	<!-- Available browsers:"chrome", "firefox", "ie","edge" -->
+	<parameter name="browser" value="chrome" />
+	
+    <test name="LoginTestDDT">
+        <classes>
+            <class name="tests.LoginDDT"/>
+        </classes>
+    </test>
+ 	<test name="LoginTest">
+        <classes>
+            <class name="tests.LoginPageTest"/>
+        </classes>
+    </test>
+    <test name="LoginTestInvalidID">
+        <classes>
+            <class name="tests.LoginTestInvalidID"/>
+        </classes>
+    </test>
+    <test name="LoginAdministrator">
+        <classes>
+            <class name="tests.AdministratorLoginTest"/>
+        </classes>
+    </test>
+    
+    
+</suite>

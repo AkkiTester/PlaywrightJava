@@ -1,5 +1,8 @@
 package base;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
@@ -27,7 +30,8 @@ public class BaseApiTest {
 	
 	@BeforeSuite
 	public void setupSuite() {
-        ExtentSparkReporter reporter = new ExtentSparkReporter(".\\Report\\Api-extent-report.html");
+		String timestampString = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+        ExtentSparkReporter reporter = new ExtentSparkReporter(".\\Report\\Api-extent-report"+timestampString+".html");
         extent = new ExtentReports();
         extent.attachReporter(reporter);
         extent.setSystemInfo("os", "Windows");

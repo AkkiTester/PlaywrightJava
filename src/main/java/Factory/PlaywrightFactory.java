@@ -1,8 +1,11 @@
 package Factory;
 
+import java.awt.Dimension;
+import java.awt.Toolkit;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.Properties;
 
 import com.microsoft.playwright.Browser;
@@ -10,6 +13,7 @@ import com.microsoft.playwright.BrowserContext;
 import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
+import com.microsoft.playwright.Tracing;
 
 import POM.AdministratorLogin;
 import POM.Dashboard;
@@ -57,9 +61,27 @@ public class PlaywrightFactory {
 		default:
 			System.out.println("Please pass the right browse name.....");
 		}
+		Dimension screensize = Toolkit.getDefaultToolkit().getScreenSize();
+		Double width = screensize.getWidth();
+		Double height = screensize.getHeight();	
 		
-		browserContext = brows.newContext();
+		// Convert Double to int
+        int widthInt = width.intValue();
+        int heightInt = height.intValue();
 		
+		browserContext = brows.newContext(new Browser.NewContextOptions()
+				.setViewportSize(widthInt, heightInt)
+				.setRecordVideoDir(Paths.get("TestVideos/"))
+				.setRecordVideoSize(1280, 720));
+		// Start tracing before performing actions
+		browserContext.tracing().start(new Tracing.StartOptions()
+                .setScreenshots(true) // Enable screenshots
+                .setSnapshots(true)   // Enable snapshots
+                .setSources(true));   // Include sources
+
+		// Stop tracing and export it to a file in the specified folder
+		browserContext.tracing().stop(new Tracing.StopOptions()
+                .setPath(Paths.get("trace_files/trace.zip"))); // Specify the folder and file name
 		
 		browserContext.setDefaultTimeout(40000);
 		
