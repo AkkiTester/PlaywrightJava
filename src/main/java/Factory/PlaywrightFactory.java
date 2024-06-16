@@ -27,7 +27,7 @@ public class PlaywrightFactory {
 	
 	Playwright playwright;
 	Browser brows;
-	BrowserContext browserContext;
+	protected BrowserContext browserContext;
 	protected Page page;
 //	protected Properties prop;
 	
@@ -73,15 +73,9 @@ public class PlaywrightFactory {
 				.setViewportSize(widthInt, heightInt)
 				.setRecordVideoDir(Paths.get("TestVideos/"))
 				.setRecordVideoSize(1280, 720));
-		// Start tracing before performing actions
-		browserContext.tracing().start(new Tracing.StartOptions()
-                .setScreenshots(true) // Enable screenshots
-                .setSnapshots(true)   // Enable snapshots
-                .setSources(true));   // Include sources
+		
 
-		// Stop tracing and export it to a file in the specified folder
-		browserContext.tracing().stop(new Tracing.StopOptions()
-                .setPath(Paths.get("trace_files/trace.zip"))); // Specify the folder and file name
+		
 		
 		browserContext.setDefaultTimeout(40000);
 		

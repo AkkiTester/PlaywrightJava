@@ -19,6 +19,7 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.microsoft.playwright.Page;
+import com.microsoft.playwright.Tracing;
 
 import Factory.PlaywrightFactory;
 import POM.LoginPage;
@@ -57,6 +58,8 @@ public class BaseTest extends PlaywrightFactory{
     public void tearDownSuite() {
         extent.flush();
     }
+	
+	
 	
 	// Static method to create a new test case in Extent Reports
     public static ExtentTest createTest(String testName) {
@@ -99,13 +102,21 @@ public class BaseTest extends PlaywrightFactory{
 		MaintanancePage = new MaintanancePage(page);
 		Dashboard = new Dashboard(page);
 		excel = new ExcelFileReader();
-		
+		// Start tracing before performing actions
+		browserContext.tracing().start(new Tracing.StartOptions()
+                .setScreenshots(true) // Enable screenshots
+                .setSnapshots(true)   // Enable snapshots
+                .setSources(true));   // Include sources
 	}
 	
 	@AfterTest
 	public void tearDown() {
+		// Stop tracing and export it to a file in the specified folder
+				browserContext.tracing().stop(new Tracing.StopOptions()
+		                .setPath(Paths.get("trace_files/trace.zip"))); // Specify the folder and file name
 		page.context().browser().close();
 	}
+	
 	
 	
 	@AfterMethod
