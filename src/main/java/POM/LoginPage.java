@@ -10,9 +10,7 @@ import Factory.PlaywrightFactory;
 import reader.Configreader;
 
 public class LoginPage  extends PlaywrightFactory{
-	
-	
-	
+
 	// Locators
 	private String username = "input[name='username']";
 	private String password = "input[name='password']";

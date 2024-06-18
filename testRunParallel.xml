@@ -24,6 +24,4 @@
             <class name="tests.AdministratorLoginTest"/>
         </classes>
     </test>
-    
-    
 </suite>
