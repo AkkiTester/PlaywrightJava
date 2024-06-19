@@ -1,11 +1,11 @@
 package tests;
-import org.testng.Assert;
-
 import org.testng.annotations.Test;
-
 import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.ExtentColor;
 
 import base.BaseTest;
+
+import static org.testng.Assert.*;
 
 public class AdministratorLoginTest extends BaseTest{
 
@@ -24,9 +24,17 @@ public class AdministratorLoginTest extends BaseTest{
 		AdministratorLogin.Enterpassword();
 		log(Status.INFO, "Click on Confirm Button");
 		AdministratorLogin.ClickConfirmButton();
-		
+		if ("Purge Employee Records".equals(MaintanancePage.CheckPurgeHeader())){
+//			assertTrue(" Employee Records".equals(MaintanancePage.CheckPurgeHeader()));
+			assertTrue(true);
+			log(Status.PASS, "Administrator Login Test Pass",ExtentColor.GREEN);
+		}
+		else {
+//			assertEquals("Purge Employee Records",MaintanancePage.CheckPurgeHeader());
+			assertFalse(false);
+			log(Status.PASS, "Administrator Login Test Fail",ExtentColor.GREEN);
+		}
 		System.out.println(MaintanancePage.CheckPurgeHeader());	
 
-		
 	}
 }

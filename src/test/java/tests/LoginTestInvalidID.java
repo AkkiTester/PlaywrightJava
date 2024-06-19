@@ -29,10 +29,10 @@ public class LoginTestInvalidID  extends BaseTest{
 		log(Status.INFO, "Click On Login Button ");
 		String pageurl = LoginPage.getLoginPageUrl();
 		if (pageurl.contains("login")) {
-			log(Status.PASS, "Login Test Case InValid Credntial",ExtentColor.GREEN);
+			log(Status.PASS, "Login Test Case  with InValid Credntial Pass",ExtentColor.GREEN);
         } else {
 //        	page.screenshot(new Page.ScreenshotOptions().setPath(Paths.get(".\\Screenshot\\"+fileName+".png")).setFullPage(true));
-            log(Status.FAIL, "Login Test Case InValid Credntial",ExtentColor.RED);
+            log(Status.FAIL, "Login Test Case with InValid Credntial Fail",ExtentColor.RED);
         }
 		assertTrue(false);
 //		Assert.assertTrue(pageurl.contains("login"), "URL does not contain 'dashboard'");
