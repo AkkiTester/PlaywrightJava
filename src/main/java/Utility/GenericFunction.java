@@ -1,0 +1,80 @@
+package Utility;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
+
+import com.microsoft.playwright.ElementHandle;
+import com.microsoft.playwright.Locator;
+import com.microsoft.playwright.Page;
+import com.microsoft.playwright.options.ElementState;
+import com.microsoft.playwright.options.SelectOption;
+
+import Factory.PlaywrightFactory;
+
+
+public class GenericFunction extends PlaywrightFactory {
+	
+	public GenericFunction(Page page) {
+		this.page = page;
+	}
+//	Dropdown
+	public void dropdownSelectionByValue(String element ,String value) {
+		page.locator(element).selectOption(value);
+	}
+	
+	public void dropdownSelectionByLable(String element ,String lable) {
+		page.locator(element).selectOption(new SelectOption().setLabel(lable));
+	}
+	
+	public void dropdownSelectionByIndex(String element ,int index) {
+		page.locator(element).selectOption(new SelectOption().setIndex(index));
+	}
+	
+	public void waitForElemnt(String element ) {
+		page.waitForSelector(element);
+	}
+	
+	
+	public void waitForElemntVisibility(String element,int time ) {
+		ElementHandle hrefElement = page.querySelector(element);
+		hrefElement.waitForElementState(ElementState.VISIBLE);
+		hrefElement.waitForElementState(ElementState.VISIBLE,new ElementHandle.WaitForElementStateOptions().setTimeout(time));
+	}
+	
+//	Alternate Thread.sleep()
+	public void Thread_sleep(int time ) {
+		page.waitForTimeout(time);
+	}
+	
+	public void hoverElement(String element) {
+		page.locator(element).hover();
+	}
+	
+	public void forceClick(String element) {
+		page.locator(element).click(new Locator.ClickOptions().setForce(true));
+	}
+	
+	public boolean checkboxIsChecked(String element) {
+		return page.locator(element).isChecked();
+	}
+	
+	public void scrollIntoViwe(String element) {
+		page.locator(element).scrollIntoViewIfNeeded();
+	}
+	
+	public void windowToVisibleByIndex(int index) {
+		List<Page> pages = browserContext.pages();
+		pages.get(index).bringToFront();
+	}
+/**
+ * TimeStamp
+ * @return String
+ */
+	public String getTimeStamp() {
+		return new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+	}
+	
+	
+	
+}

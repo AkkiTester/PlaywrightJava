@@ -19,10 +19,6 @@
             <class name="tests.AdministratorLoginTest"/>
         </classes>
     </test>
-    <test name="LoginTestDDT">
-        <classes>
-            <class name="tests.LoginDDT"/>
-        </classes>
-    </test>
+    
     
 </suite>

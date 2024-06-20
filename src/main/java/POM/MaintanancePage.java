@@ -16,8 +16,8 @@ public class MaintanancePage {
 		
 		// page methods:
 		
-		public boolean CheckPurgeHeader() {
-			return page.locator(PurgeHeader).isVisible();
+		public String CheckPurgeHeader() {
+			return page.locator(PurgeHeader).innerText();
 		}
 		
 	

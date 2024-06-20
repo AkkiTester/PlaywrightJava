@@ -3,6 +3,8 @@ package base;
 import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
+
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -37,9 +39,9 @@ public class BaseTest extends PlaywrightFactory{
 //    protected static ExtentTest test;
     static Page page;
 	
-	
+    @Parameters("browser")
 	@BeforeSuite
-	public void setupSuite() {
+	public void setupSuite(@Optional ("chrome")  String  browser) {
 		String timestampString = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
         ExtentSparkReporter reporter = new ExtentSparkReporter(".\\Report\\OrangeHRM_extent-report"+timestampString+".html");
         extent = new ExtentReports();
@@ -50,8 +52,9 @@ public class BaseTest extends PlaywrightFactory{
         
         extent.attachReporter(reporter);
         extent.setSystemInfo("OS", "Windows");
-        extent.setSystemInfo("Tester", "Akash Dilwale");
+        extent.setSystemInfo("Testing Team", "RemoSys Team");
         extent.setSystemInfo("Web Application", "Orange HRM");
+        extent.setSystemInfo("Browser", browser);
     }
 	
 	@AfterSuite
