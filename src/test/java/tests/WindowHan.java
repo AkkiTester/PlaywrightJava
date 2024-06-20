@@ -12,6 +12,7 @@ import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 import com.microsoft.playwright.options.ElementState;
+import com.microsoft.playwright.options.WaitForSelectorState;
 
 public class WindowHan {
 
@@ -29,14 +30,19 @@ public class WindowHan {
 		System.out.println(page.url());
 //		page.waitForLoadState();
 //		Thread.sleep(2000);
-//		ElementHandle hrefElement = page.querySelector("text=OrangeHRM OS 5.6.1");
-//		hrefElement.waitForElementState(ElementState.VISIBLE);
+		
+		ElementHandle hrefElement = page.querySelector("text=OrangeHRM OS 5.6.1");
+		hrefElement.waitForElementState(ElementState.VISIBLE);
+		hrefElement.waitForElementState(ElementState.VISIBLE,new ElementHandle.WaitForElementStateOptions().setTimeout(1000));
+		
 		
 //		---------------------  Explicit wait  -------------------------------------------------
 		page.waitForSelector("//p[normalize-space()='OrangeHRM OS 5.6.1']");
+//		page.locator("//p[normalize-space()='OrangeHRM OS 5.6.1']").highlight();
+		page.waitForSelector("//p[normalize-space()='OrangeHRM OS 5.6.1']").waitForElementState(ElementState.STABLE);
 //		page.locator("body > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(4) > div:nth-child(1) > a:nth-child(1) > svg:nth-child(1) > g:nth-child(1) > path:nth-child(1)").hover();
 		Locator elements = page.locator("//div[@class='orangehrm-login-footer-sm']/a");
-	
+		elements.waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE));
 		
 		int countl = elements.count();
 		System.out.println(countl+"Element count");
@@ -67,7 +73,7 @@ public class WindowHan {
 			
 			 Page Linkdin = pages.get(2);
 		}
-		System.out.println(context.pages()+"direct count page");
+		System.out.println(context.pages()+"direct page");
 		// Get the list of open pages
 		
 
