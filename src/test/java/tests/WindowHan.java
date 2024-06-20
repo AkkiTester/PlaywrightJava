@@ -31,9 +31,9 @@ public class WindowHan {
 //		page.waitForLoadState();
 //		Thread.sleep(2000);
 		
-		ElementHandle hrefElement = page.querySelector("text=OrangeHRM OS 5.6.1");
-		hrefElement.waitForElementState(ElementState.VISIBLE);
-		hrefElement.waitForElementState(ElementState.VISIBLE,new ElementHandle.WaitForElementStateOptions().setTimeout(1000));
+//		ElementHandle hrefElement = page.querySelector("text=OrangeHRM OS 5.6.1");
+//		hrefElement.waitForElementState(ElementState.VISIBLE);
+//		hrefElement.waitForElementState(ElementState.VISIBLE,new ElementHandle.WaitForElementStateOptions().setTimeout(1000));
 		
 		
 //		---------------------  Explicit wait  -------------------------------------------------
