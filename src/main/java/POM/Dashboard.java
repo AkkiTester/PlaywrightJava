@@ -7,6 +7,7 @@ public class Dashboard {
 	
 	// Locators
 	private String Maintenance = "//span[contains(normalize-space(),'Maintenance')]";
+	private String Admin = "//span[text()='Admin']";
 	
 	
 	//Constructor
@@ -15,7 +16,13 @@ public class Dashboard {
 	}
 	
 	// page methods:
-	public void ClickMaintenance() {
+	public void ClickMaintenanceSideMenu() {
 		page.locator(Maintenance).click();
 	}
+	
+	public void ClickAdminSideMenu() {
+		page.locator(Admin).click();
+	}
+	
+	
 }

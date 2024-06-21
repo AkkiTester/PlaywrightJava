@@ -9,6 +9,7 @@ import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.ElementState;
 import com.microsoft.playwright.options.SelectOption;
+import com.microsoft.playwright.options.WaitForSelectorState;
 
 import Factory.PlaywrightFactory;
 
@@ -18,9 +19,11 @@ public class GenericFunction extends PlaywrightFactory {
 	public GenericFunction(Page page) {
 		this.page = page;
 	}
+	
 //	Dropdown
 	public void dropdownSelectionByValue(String element ,String value) {
 		page.locator(element).selectOption(value);
+
 	}
 	
 	public void dropdownSelectionByLable(String element ,String lable) {
@@ -30,13 +33,16 @@ public class GenericFunction extends PlaywrightFactory {
 	public void dropdownSelectionByIndex(String element ,int index) {
 		page.locator(element).selectOption(new SelectOption().setIndex(index));
 	}
-	
-	public void waitForElemnt(String element ) {
+//	Implicit wait 
+	public void implicitWaitForElemnt(String element ) {
 		page.waitForSelector(element);
 	}
+//	Explicit Wait
+	public void explicitWaitForElemnt(String element,int time ) {		
+		page.waitForSelector(element,new Page.WaitForSelectorOptions().setTimeout(time).setState(WaitForSelectorState.ATTACHED));
+	}
 	
-	
-	public void waitForElemntVisibility(String element,int time ) {
+	public void waitForElemntState(String element,int time ) {
 		ElementHandle hrefElement = page.querySelector(element);
 		hrefElement.waitForElementState(ElementState.VISIBLE);
 		hrefElement.waitForElementState(ElementState.VISIBLE,new ElementHandle.WaitForElementStateOptions().setTimeout(time));
@@ -67,6 +73,7 @@ public class GenericFunction extends PlaywrightFactory {
 		List<Page> pages = browserContext.pages();
 		pages.get(index).bringToFront();
 	}
+	
 /**
  * TimeStamp
  * @return String

@@ -37,6 +37,7 @@ public class LoginPage  extends PlaywrightFactory{
 	
 	public void setUsernameDdt(String name) {
 //		String userName = prop.getProperty(name);
+//		page.locator(username).fill(name);
 		page.fill(username,name);
 	}
 	

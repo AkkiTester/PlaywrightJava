@@ -4,19 +4,29 @@
 	<!-- Available browsers:"chrome", "firefox", "ie","edge" -->
 	<parameter name="browser" value="chrome" />
 	
-    <test name="LoginTest">
+    <test name="Login Test">
         <classes>
             <class name="tests.LoginPageTest"/>
         </classes>
     </test>
-    <test name="LoginTestInvalidID">
+     <test name="LoginTestDDT">
+        <classes>
+            <class name="tests.LoginDDT"/>
+        </classes>
+    </test>
+    <test name="Login Test Invalid ID">
         <classes>
             <class name="tests.LoginTestInvalidID"/>
         </classes>
     </test>
-    <test name="LoginAdministrator">
+    <test name="Login Administrator">
         <classes>
             <class name="tests.AdministratorLoginTest"/>
+        </classes>
+    </test>
+    <test name="Admin System User Search">
+        <classes>
+            <class name="tests.AdminSystemUserSearch"/>
         </classes>
     </test>
     

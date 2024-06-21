@@ -19,7 +19,7 @@ public class AdministratorLoginTest extends BaseTest{
 		log(Status.INFO, "Click on Login Button");
 		LoginPage.ClickLoginButton();
 		log(Status.INFO, "Click on Maintenance Side Menu");
-		Dashboard.ClickMaintenance();
+		Dashboard.ClickMaintenanceSideMenu();
 		log(Status.INFO, "Entering Administrator Password");
 		AdministratorLogin.Enterpassword();
 		log(Status.INFO, "Click on Confirm Button");

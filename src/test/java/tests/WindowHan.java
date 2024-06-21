@@ -39,10 +39,10 @@ public class WindowHan {
 //		---------------------  Explicit wait  -------------------------------------------------
 		page.waitForSelector("//p[normalize-space()='OrangeHRM OS 5.6.1']");
 //		page.locator("//p[normalize-space()='OrangeHRM OS 5.6.1']").highlight();
-		page.waitForSelector("//p[normalize-space()='OrangeHRM OS 5.6.1']").waitForElementState(ElementState.STABLE);
+//		page.waitForSelector("//p[normalize-space()='OrangeHRM OS 5.6.1']").waitForElementState(ElementState.STABLE);
 //		page.locator("body > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(4) > div:nth-child(1) > a:nth-child(1) > svg:nth-child(1) > g:nth-child(1) > path:nth-child(1)").hover();
 		Locator elements = page.locator("//div[@class='orangehrm-login-footer-sm']/a");
-		elements.waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE));
+//		elements.waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE));
 		
 		int countl = elements.count();
 		System.out.println(countl+"Element count");

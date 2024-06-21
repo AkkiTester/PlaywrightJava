@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [DeomSuite]" guice-stage="DEVELOPMENT">
   <parameter name="browser" value="chrome"/>
-  <test thread-count="5" name="LoginTestInvalidID(failed)">
+  <test thread-count="5" name="Login Test Invalid ID(failed)">
     <classes>
       <class name="tests.LoginTestInvalidID">
         <methods>
@@ -15,5 +15,5 @@
         </methods>
       </class> <!-- tests.LoginTestInvalidID -->
     </classes>
-  </test> <!-- LoginTestInvalidID(failed) -->
+  </test> <!-- Login Test Invalid ID(failed) -->
 </suite> <!-- Failed suite [DeomSuite] -->

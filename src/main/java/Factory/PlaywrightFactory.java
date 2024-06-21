@@ -19,9 +19,11 @@ import com.microsoft.playwright.Tracing;
 import POM.AdministratorLogin;
 import POM.Dashboard;
 import POM.LoginPage;
+import POM.AdminPage;
 import POM.MaintanancePage;
 import reader.Configreader;
 import reader.ExcelFileReader;
+import Utility.GenericFunction;
 
 //Initial Playwright
 public class PlaywrightFactory {
@@ -29,13 +31,15 @@ public class PlaywrightFactory {
 	Playwright playwright;
 	Browser brows;
 	protected BrowserContext browserContext;
+	protected BrowserContext browserContextTwo;
 	protected Page page;
 //	protected Properties prop;
-	
+	protected GenericFunction GenericFunction;
 	protected LoginPage LoginPage;
 	protected AdministratorLogin AdministratorLogin;
 	protected MaintanancePage MaintanancePage;
 	protected Dashboard Dashboard;
+	protected AdminPage AdminPage;
 	public Configreader prop;
 	public ExcelFileReader excel;
 	
@@ -53,11 +57,14 @@ public class PlaywrightFactory {
 			brows = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
 			break;
 		case "firefox":
-			brows = playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(false));
+			brows = playwright.firefox().launch(new BrowserType.LaunchOptions().setChannel("firefox").setHeadless(false));
 			break;
 		case "chrome":
 			brows = playwright.chromium().launch(new BrowserType.LaunchOptions().setChannel("chrome").setHeadless(false));
 			break;
+		case "edge":
+	        brows = playwright.chromium().launch(new BrowserType.LaunchOptions().setChannel("msedge").setHeadless(false));
+	        break;
 		
 		default:
 			System.out.println("Please pass the right browse name.....");
@@ -75,10 +82,19 @@ public class PlaywrightFactory {
 				.setRecordVideoDir(Paths.get("TestVideos/"))
 				.setRecordVideoSize(1280, 720));
 		
+		
+//		page.evaluate("window.moveTo(100, 150);");
+		
+//
+//		browserContextTwo = brows.newContext(new Browser.NewContextOptions()
+//				.setViewportSize(widthInt, heightInt)
+//				.setRecordVideoDir(Paths.get("TestVideos/"))
+//				.setRecordVideoSize(1280, 720));
 
 		
 		
-		browserContext.setDefaultTimeout(40000);
+		browserContext.setDefaultTimeout(80000);
+//		browserContextTwo.setDefaultTimeout(40000);
 		
 		page = browserContext.newPage();
 		page.navigate(prop.getProperty("loginpageurl"));

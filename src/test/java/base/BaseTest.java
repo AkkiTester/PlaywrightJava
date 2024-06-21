@@ -30,6 +30,7 @@ import POM.MaintanancePage;
 import reader.Configreader;
 import reader.ExcelFileReader;
 import POM.Dashboard;
+import POM.AdminPage;
 
 
 public class BaseTest extends PlaywrightFactory{
@@ -104,6 +105,7 @@ public class BaseTest extends PlaywrightFactory{
 		AdministratorLogin = new AdministratorLogin(page);
 		MaintanancePage = new MaintanancePage(page);
 		Dashboard = new Dashboard(page);
+		AdminPage = new AdminPage(page);
 		excel = new ExcelFileReader();
 		// Start tracing before performing actions
 		browserContext.tracing().start(new Tracing.StartOptions()
