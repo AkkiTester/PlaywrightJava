@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
+<testng-results ignored="0" total="9" passed="7" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-24T15:46:42 IST" name="DeomSuite" finished-at="2024-06-24T15:48:42 IST" duration-ms="119915">
+  <suite started-at="2024-06-24T20:00:05 IST" name="DeomSuite" finished-at="2024-06-24T20:01:51 IST" duration-ms="105801">
     <groups>
     </groups>
-    <test started-at="2024-06-24T15:46:42 IST" name="Login Test" finished-at="2024-06-24T15:47:06 IST" duration-ms="23863">
+    <test started-at="2024-06-24T20:00:05 IST" name="LoginTest" finished-at="2024-06-24T20:00:32 IST" duration-ms="26265">
       <class name="testsLayer.LoginPageTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testsLayer.LoginPageTest@7ce69770]" started-at="2024-06-24T15:46:42 IST" name="setup" finished-at="2024-06-24T15:47:02 IST" duration-ms="19414" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testsLayer.LoginPageTest@7ce69770]" started-at="2024-06-24T20:00:05 IST" name="setup" finished-at="2024-06-24T20:00:22 IST" duration-ms="17067" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTestValidIDPass()[pri:0, instance:testsLayer.LoginPageTest@7ce69770]" started-at="2024-06-24T15:47:02 IST" name="loginTestValidIDPass" finished-at="2024-06-24T15:47:04 IST" duration-ms="2519" status="PASS">
+        <test-method signature="loginTestValidIDPass()[pri:0, instance:testsLayer.LoginPageTest@7ce69770]" started-at="2024-06-24T20:00:22 IST" name="loginTestValidIDPass" finished-at="2024-06-24T20:00:26 IST" duration-ms="3310" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestValidIDPass -->
-        <test-method is-config="true" signature="captureScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:testsLayer.LoginPageTest@7ce69770]" started-at="2024-06-24T15:47:04 IST" name="captureScreenshotOnFailure" finished-at="2024-06-24T15:47:04 IST" duration-ms="15" status="PASS">
+        <test-method is-config="true" signature="captureScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:testsLayer.LoginPageTest@7ce69770]" started-at="2024-06-24T20:00:26 IST" name="captureScreenshotOnFailure" finished-at="2024-06-24T20:00:26 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,15 +33,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshotOnFailure -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testsLayer.LoginPageTest@7ce69770]" started-at="2024-06-24T15:47:04 IST" name="tearDown" finished-at="2024-06-24T15:47:06 IST" duration-ms="1758" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testsLayer.LoginPageTest@7ce69770]" started-at="2024-06-24T20:00:26 IST" name="tearDown" finished-at="2024-06-24T20:00:32 IST" duration-ms="5848" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testsLayer.LoginPageTest -->
-    </test> <!-- Login Test -->
-    <test started-at="2024-06-24T15:47:06 IST" name="LoginTestDDT" finished-at="2024-06-24T15:47:30 IST" duration-ms="23721">
-      <class name="testsLayer.LoginDDT">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testsLayer.LoginDDT@239a307b]" started-at="2024-06-24T15:47:06 IST" name="setup" finished-at="2024-06-24T15:47:17 IST" duration-ms="10286" status="PASS">
+    </test> <!-- LoginTest -->
+    <test started-at="2024-06-24T20:00:05 IST" name="LoginTestInvalidID" finished-at="2024-06-24T20:00:32 IST" duration-ms="26441">
+      <class name="testsLayer.LoginTestInvalidID">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testsLayer.LoginTestInvalidID@5a59ca5e]" started-at="2024-06-24T20:00:05 IST" name="setup" finished-at="2024-06-24T20:00:19 IST" duration-ms="14053" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -52,7 +52,191 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTestValidIDPass(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testsLayer.LoginDDT@239a307b]" started-at="2024-06-24T15:47:17 IST" name="loginTestValidIDPass" data-provider="LoginData" finished-at="2024-06-24T15:47:24 IST" duration-ms="6853" status="PASS">
+        <test-method signature="loginTestInValidIDPass()[pri:0, instance:testsLayer.LoginTestInvalidID@5a59ca5e]" started-at="2024-06-24T20:00:19 IST" name="loginTestInValidIDPass" finished-at="2024-06-24T20:00:22 IST" duration-ms="2354" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at testsLayer.LoginTestInvalidID.loginTestInValidIDPass(LoginTestInvalidID.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestInValidIDPass -->
+        <test-method is-config="true" signature="captureScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:testsLayer.LoginTestInvalidID@5a59ca5e]" started-at="2024-06-24T20:00:22 IST" name="captureScreenshotOnFailure" finished-at="2024-06-24T20:00:31 IST" duration-ms="9643" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTestInValidIDPass status=FAILURE method=LoginTestInvalidID.loginTestInValidIDPass()[pri:0, instance:testsLayer.LoginTestInvalidID@5a59ca5e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.microsoft.playwright.PlaywrightException">
+            <message>
+              <![CDATA[Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError:Target page, context or browser has been closed
+Error
+    at captureRawStack (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-1036034859044001197\package\lib\utils\stackTrace.js:50:17)
+    at LongStandingScope._race (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-1036034859044001197\package\lib\utils\manualPromise.js:91:52)
+    at LongStandingScope.race (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-1036034859044001197\package\lib\utils\manualPromise.js:84:17)
+    at PageDispatcher._handleCommand (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-1036034859044001197\package\lib\server\dispatchers\dispatcher.js:96:36)
+    at DispatcherConnection.dispatch (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-1036034859044001197\package\lib\server\dispatchers\dispatcher.js:362:39)
+}
+Call log:
+- taking page screenshot
+- waiting for fonts to load...
+- fonts loaded
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.PlaywrightException: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError:Target page, context or browser has been closed
+Error
+    at captureRawStack (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-1036034859044001197\package\lib\utils\stackTrace.js:50:17)
+    at LongStandingScope._race (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-1036034859044001197\package\lib\utils\manualPromise.js:91:52)
+    at LongStandingScope.race (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-1036034859044001197\package\lib\utils\manualPromise.js:84:17)
+    at PageDispatcher._handleCommand (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-1036034859044001197\package\lib\server\dispatchers\dispatcher.js:96:36)
+    at DispatcherConnection.dispatch (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-1036034859044001197\package\lib\server\dispatchers\dispatcher.js:362:39)
+}
+Call log:
+- taking page screenshot
+- waiting for fonts to load...
+- fonts loaded
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.PageImpl.screenshotImpl(PageImpl.java:1094)
+at com.microsoft.playwright.impl.PageImpl.lambda$screenshot$65(PageImpl.java:1038)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.PageImpl.screenshot(PageImpl.java:1038)
+at baseTest.BaseTestWeb.captureSS(BaseTestWeb.java:170)
+at baseTest.BaseTestWeb.captureScreenshotOnFailure(BaseTestWeb.java:142)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:779)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:755)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError:Target page, context or browser has been closed
+Error
+    at captureRawStack (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-1036034859044001197\package\lib\utils\stackTrace.js:50:17)
+    at LongStandingScope._race (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-1036034859044001197\package\lib\utils\manualPromise.js:91:52)
+    at LongStandingScope.race (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-1036034859044001197\package\lib\utils\manualPromise.js:84:17)
+    at PageDispatcher._handleCommand (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-1036034859044001197\package\lib\server\dispatchers\dispatcher.js:96:36)
+    at DispatcherConnection.dispatch (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-1036034859044001197\package\lib\server\dispatchers\dispatcher.js:362:39)
+}
+Call log:
+- taking page screenshot
+- waiting for fonts to load...
+- fonts loaded
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:101)
+at com.microsoft.playwright.impl.BrowserImpl.closeImpl(BrowserImpl.java:89)
+at com.microsoft.playwright.impl.BrowserImpl.lambda$close$0(BrowserImpl.java:72)
+at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+at com.microsoft.playwright.impl.BrowserImpl.close(BrowserImpl.java:72)
+at com.microsoft.playwright.Browser.close(Browser.java:1183)
+at baseTest.BaseTestWeb.tearDown(BaseTestWeb.java:133)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:661)
+at org.testng.TestRunner.afterRun(TestRunner.java:904)
+at org.testng.TestRunner.run(TestRunner.java:622)
+... 7 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshotOnFailure -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testsLayer.LoginTestInvalidID@5a59ca5e]" started-at="2024-06-24T20:00:31 IST" name="tearDown" finished-at="2024-06-24T20:00:32 IST" duration-ms="281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testsLayer.LoginTestInvalidID -->
+    </test> <!-- LoginTestInvalidID -->
+    <test started-at="2024-06-24T20:00:32 IST" name="LoginDDT" finished-at="2024-06-24T20:00:56 IST" duration-ms="24160">
+      <class name="testsLayer.LoginDDT">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testsLayer.LoginDDT@15a34df2]" started-at="2024-06-24T20:00:32 IST" name="setup" finished-at="2024-06-24T20:00:42 IST" duration-ms="10297" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTestValidIDPass(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testsLayer.LoginDDT@15a34df2]" started-at="2024-06-24T20:00:42 IST" name="loginTestValidIDPass" data-provider="LoginData" finished-at="2024-06-24T20:00:48 IST" duration-ms="5560" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -78,18 +262,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestValidIDPass -->
-        <test-method is-config="true" signature="captureScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:testsLayer.LoginDDT@239a307b]" started-at="2024-06-24T15:47:24 IST" name="captureScreenshotOnFailure" finished-at="2024-06-24T15:47:24 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="captureScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:testsLayer.LoginDDT@15a34df2]" started-at="2024-06-24T20:00:48 IST" name="captureScreenshotOnFailure" finished-at="2024-06-24T20:00:48 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginTestValidIDPass status=SUCCESS method=LoginDDT.loginTestValidIDPass(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testsLayer.LoginDDT@239a307b] output={null}]]]>
+                <![CDATA[[TestResult name=loginTestValidIDPass status=SUCCESS method=LoginDDT.loginTestValidIDPass(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testsLayer.LoginDDT@15a34df2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshotOnFailure -->
-        <test-method signature="loginTestValidIDPass(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testsLayer.LoginDDT@239a307b]" started-at="2024-06-24T15:47:24 IST" name="loginTestValidIDPass" data-provider="LoginData" finished-at="2024-06-24T15:47:26 IST" duration-ms="2013" status="PASS">
+        <test-method signature="loginTestValidIDPass(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testsLayer.LoginDDT@15a34df2]" started-at="2024-06-24T20:00:48 IST" name="loginTestValidIDPass" data-provider="LoginData" finished-at="2024-06-24T20:00:50 IST" duration-ms="1971" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -115,18 +299,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestValidIDPass -->
-        <test-method is-config="true" signature="captureScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:testsLayer.LoginDDT@239a307b]" started-at="2024-06-24T15:47:26 IST" name="captureScreenshotOnFailure" finished-at="2024-06-24T15:47:26 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="captureScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:testsLayer.LoginDDT@15a34df2]" started-at="2024-06-24T20:00:50 IST" name="captureScreenshotOnFailure" finished-at="2024-06-24T20:00:50 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginTestValidIDPass status=SUCCESS method=LoginDDT.loginTestValidIDPass(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testsLayer.LoginDDT@239a307b] output={null}]]]>
+                <![CDATA[[TestResult name=loginTestValidIDPass status=SUCCESS method=LoginDDT.loginTestValidIDPass(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testsLayer.LoginDDT@15a34df2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshotOnFailure -->
-        <test-method signature="loginTestValidIDPass(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testsLayer.LoginDDT@239a307b]" started-at="2024-06-24T15:47:26 IST" name="loginTestValidIDPass" data-provider="LoginData" finished-at="2024-06-24T15:47:27 IST" duration-ms="1448" status="PASS">
+        <test-method signature="loginTestValidIDPass(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testsLayer.LoginDDT@15a34df2]" started-at="2024-06-24T20:00:50 IST" name="loginTestValidIDPass" data-provider="LoginData" finished-at="2024-06-24T20:00:52 IST" duration-ms="2344" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -152,18 +336,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestValidIDPass -->
-        <test-method is-config="true" signature="captureScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:testsLayer.LoginDDT@239a307b]" started-at="2024-06-24T15:47:27 IST" name="captureScreenshotOnFailure" finished-at="2024-06-24T15:47:27 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="captureScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:testsLayer.LoginDDT@15a34df2]" started-at="2024-06-24T20:00:52 IST" name="captureScreenshotOnFailure" finished-at="2024-06-24T20:00:52 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginTestValidIDPass status=SUCCESS method=LoginDDT.loginTestValidIDPass(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testsLayer.LoginDDT@239a307b] output={null}]]]>
+                <![CDATA[[TestResult name=loginTestValidIDPass status=SUCCESS method=LoginDDT.loginTestValidIDPass(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testsLayer.LoginDDT@15a34df2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshotOnFailure -->
-        <test-method signature="loginTestValidIDPass(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testsLayer.LoginDDT@239a307b]" started-at="2024-06-24T15:47:27 IST" name="loginTestValidIDPass" data-provider="LoginData" finished-at="2024-06-24T15:47:29 IST" duration-ms="1638" status="PASS">
+        <test-method signature="loginTestValidIDPass(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testsLayer.LoginDDT@15a34df2]" started-at="2024-06-24T20:00:52 IST" name="loginTestValidIDPass" data-provider="LoginData" finished-at="2024-06-24T20:00:54 IST" duration-ms="2397" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -189,26 +373,60 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestValidIDPass -->
-        <test-method is-config="true" signature="captureScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:testsLayer.LoginDDT@239a307b]" started-at="2024-06-24T15:47:29 IST" name="captureScreenshotOnFailure" finished-at="2024-06-24T15:47:29 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="captureScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:testsLayer.LoginDDT@15a34df2]" started-at="2024-06-24T20:00:54 IST" name="captureScreenshotOnFailure" finished-at="2024-06-24T20:00:54 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginTestValidIDPass status=SUCCESS method=LoginDDT.loginTestValidIDPass(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testsLayer.LoginDDT@239a307b] output={null}]]]>
+                <![CDATA[[TestResult name=loginTestValidIDPass status=SUCCESS method=LoginDDT.loginTestValidIDPass(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testsLayer.LoginDDT@15a34df2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshotOnFailure -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testsLayer.LoginDDT@239a307b]" started-at="2024-06-24T15:47:29 IST" name="tearDown" finished-at="2024-06-24T15:47:30 IST" duration-ms="1372" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testsLayer.LoginDDT@15a34df2]" started-at="2024-06-24T20:00:54 IST" name="tearDown" finished-at="2024-06-24T20:00:56 IST" duration-ms="1523" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testsLayer.LoginDDT -->
-    </test> <!-- LoginTestDDT -->
-    <test started-at="2024-06-24T15:47:30 IST" name="Login Test Invalid ID" finished-at="2024-06-24T15:47:47 IST" duration-ms="17118">
-      <class name="testsLayer.LoginTestInvalidID">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testsLayer.LoginTestInvalidID@5f8e8a9d]" started-at="2024-06-24T15:47:30 IST" name="setup" finished-at="2024-06-24T15:47:40 IST" duration-ms="10160" status="PASS">
+    </test> <!-- LoginDDT -->
+    <test started-at="2024-06-24T20:00:32 IST" name="Admin System User Search" finished-at="2024-06-24T20:01:05 IST" duration-ms="33039">
+      <class name="testsLayer.AdminSystemUserSearch">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testsLayer.AdminSystemUserSearch@71075444]" started-at="2024-06-24T20:00:32 IST" name="setup" finished-at="2024-06-24T20:00:48 IST" duration-ms="16052" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test()[pri:0, instance:testsLayer.AdminSystemUserSearch@71075444]" started-at="2024-06-24T20:00:48 IST" name="test" finished-at="2024-06-24T20:00:55 IST" duration-ms="7186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="captureScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:testsLayer.AdminSystemUserSearch@71075444]" started-at="2024-06-24T20:00:55 IST" name="captureScreenshotOnFailure" finished-at="2024-06-24T20:00:55 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test status=SUCCESS method=AdminSystemUserSearch.test()[pri:0, instance:testsLayer.AdminSystemUserSearch@71075444] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshotOnFailure -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testsLayer.AdminSystemUserSearch@71075444]" started-at="2024-06-24T20:00:55 IST" name="tearDown" finished-at="2024-06-24T20:01:05 IST" duration-ms="9792" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testsLayer.AdminSystemUserSearch -->
+    </test> <!-- Admin System User Search -->
+    <test started-at="2024-06-24T20:01:05 IST" name="Add Employee" finished-at="2024-06-24T20:01:46 IST" duration-ms="41323">
+      <class name="testsLayer.AddEmploy">
+        <test-method is-config="true" signature="setupSuite(java.lang.String)[pri:0, instance:testsLayer.AddEmploy@72c8e7b]" started-at="2024-06-24T20:00:05 IST" name="setupSuite" finished-at="2024-06-24T20:00:05 IST" duration-ms="628" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -218,8 +436,19 @@
           </params>
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- setupSuite -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testsLayer.AddEmploy@72c8e7b]" started-at="2024-06-24T20:01:05 IST" name="setup" finished-at="2024-06-24T20:01:19 IST" duration-ms="14389" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTestInValidIDPass()[pri:0, instance:testsLayer.LoginTestInvalidID@5f8e8a9d]" started-at="2024-06-24T15:47:40 IST" name="loginTestInValidIDPass" finished-at="2024-06-24T15:47:43 IST" duration-ms="2464" status="FAIL">
+        <test-method signature="AddEmployeeTest()[pri:0, instance:testsLayer.AddEmploy@72c8e7b]" started-at="2024-06-24T20:01:19 IST" name="AddEmployeeTest" finished-at="2024-06-24T20:01:36 IST" duration-ms="16975" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -230,7 +459,7 @@ at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1578)
 at org.testng.Assert.assertTrue(Assert.java:57)
 at org.testng.Assert.assertTrue(Assert.java:67)
-at testsLayer.LoginTestInvalidID.loginTestInValidIDPass(LoginTestInvalidID.java:42)
+at testsLayer.AddEmploy.AddEmployeeTest(AddEmploy.java:39)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -245,157 +474,72 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:819)
 at org.testng.TestRunner.run(TestRunner.java:619)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTestInValidIDPass -->
-        <test-method is-config="true" signature="captureScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:testsLayer.LoginTestInvalidID@5f8e8a9d]" started-at="2024-06-24T15:47:43 IST" name="captureScreenshotOnFailure" finished-at="2024-06-24T15:47:46 IST" duration-ms="3370" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginTestInValidIDPass status=FAILURE method=LoginTestInvalidID.loginTestInValidIDPass()[pri:0, instance:testsLayer.LoginTestInvalidID@5f8e8a9d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- captureScreenshotOnFailure -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testsLayer.LoginTestInvalidID@5f8e8a9d]" started-at="2024-06-24T15:47:46 IST" name="tearDown" finished-at="2024-06-24T15:47:47 IST" duration-ms="1116" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testsLayer.LoginTestInvalidID -->
-    </test> <!-- Login Test Invalid ID -->
-    <test started-at="2024-06-24T15:47:47 IST" name="Login Administrator" finished-at="2024-06-24T15:48:07 IST" duration-ms="19846">
-      <class name="testsLayer.AdministratorLoginTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testsLayer.AdministratorLoginTest@6e535154]" started-at="2024-06-24T15:47:47 IST" name="setup" finished-at="2024-06-24T15:47:58 IST" duration-ms="10966" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="loginTestValidIDPass()[pri:0, instance:testsLayer.AdministratorLoginTest@6e535154]" started-at="2024-06-24T15:47:58 IST" name="loginTestValidIDPass" finished-at="2024-06-24T15:48:06 IST" duration-ms="7522" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTestValidIDPass -->
-        <test-method is-config="true" signature="captureScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:testsLayer.AdministratorLoginTest@6e535154]" started-at="2024-06-24T15:48:06 IST" name="captureScreenshotOnFailure" finished-at="2024-06-24T15:48:06 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginTestValidIDPass status=SUCCESS method=AdministratorLoginTest.loginTestValidIDPass()[pri:0, instance:testsLayer.AdministratorLoginTest@6e535154] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- captureScreenshotOnFailure -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testsLayer.AdministratorLoginTest@6e535154]" started-at="2024-06-24T15:48:06 IST" name="tearDown" finished-at="2024-06-24T15:48:07 IST" duration-ms="1351" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testsLayer.AdministratorLoginTest -->
-    </test> <!-- Login Administrator -->
-    <test started-at="2024-06-24T15:48:07 IST" name="Admin System User Search" finished-at="2024-06-24T15:48:21 IST" duration-ms="14335">
-      <class name="testsLayer.AdminSystemUserSearch">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testsLayer.AdminSystemUserSearch@55cb6996]" started-at="2024-06-24T15:48:07 IST" name="setup" finished-at="2024-06-24T15:48:13 IST" duration-ms="6004" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="test()[pri:0, instance:testsLayer.AdminSystemUserSearch@55cb6996]" started-at="2024-06-24T15:48:13 IST" name="test" finished-at="2024-06-24T15:48:20 IST" duration-ms="6588" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="captureScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:testsLayer.AdminSystemUserSearch@55cb6996]" started-at="2024-06-24T15:48:20 IST" name="captureScreenshotOnFailure" finished-at="2024-06-24T15:48:20 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=test status=SUCCESS method=AdminSystemUserSearch.test()[pri:0, instance:testsLayer.AdminSystemUserSearch@55cb6996] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- captureScreenshotOnFailure -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testsLayer.AdminSystemUserSearch@55cb6996]" started-at="2024-06-24T15:48:20 IST" name="tearDown" finished-at="2024-06-24T15:48:21 IST" duration-ms="1731" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testsLayer.AdminSystemUserSearch -->
-    </test> <!-- Admin System User Search -->
-    <test started-at="2024-06-24T15:48:21 IST" name="Add Employee " finished-at="2024-06-24T15:48:42 IST" duration-ms="20926">
-      <class name="testsLayer.AddEmploy">
-        <test-method is-config="true" signature="setupSuite(java.lang.String)[pri:0, instance:testsLayer.AddEmploy@72c8e7b]" started-at="2024-06-24T15:46:42 IST" name="setupSuite" finished-at="2024-06-24T15:46:42 IST" duration-ms="827" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupSuite -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testsLayer.AddEmploy@72c8e7b]" started-at="2024-06-24T15:48:21 IST" name="setup" finished-at="2024-06-24T15:48:30 IST" duration-ms="8540" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="AddEmployeeTest()[pri:0, instance:testsLayer.AddEmploy@72c8e7b]" started-at="2024-06-24T15:48:30 IST" name="AddEmployeeTest" finished-at="2024-06-24T15:48:39 IST" duration-ms="8915" status="PASS">
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- AddEmployeeTest -->
-        <test-method is-config="true" signature="captureScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:testsLayer.AddEmploy@72c8e7b]" started-at="2024-06-24T15:48:39 IST" name="captureScreenshotOnFailure" finished-at="2024-06-24T15:48:39 IST" duration-ms="11" status="PASS">
+        <test-method is-config="true" signature="captureScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:testsLayer.AddEmploy@72c8e7b]" started-at="2024-06-24T20:01:36 IST" name="captureScreenshotOnFailure" finished-at="2024-06-24T20:01:41 IST" duration-ms="4551" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=AddEmployeeTest status=SUCCESS method=AddEmploy.AddEmployeeTest()[pri:0, instance:testsLayer.AddEmploy@72c8e7b] output={null}]]]>
+                <![CDATA[[TestResult name=AddEmployeeTest status=FAILURE method=AddEmploy.AddEmployeeTest()[pri:0, instance:testsLayer.AddEmploy@72c8e7b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshotOnFailure -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testsLayer.AddEmploy@72c8e7b]" started-at="2024-06-24T15:48:39 IST" name="tearDown" finished-at="2024-06-24T15:48:42 IST" duration-ms="3448" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testsLayer.AddEmploy@72c8e7b]" started-at="2024-06-24T20:01:41 IST" name="tearDown" finished-at="2024-06-24T20:01:46 IST" duration-ms="5402" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:testsLayer.AddEmploy@72c8e7b]" started-at="2024-06-24T15:48:42 IST" name="tearDownSuite" finished-at="2024-06-24T15:48:43 IST" duration-ms="738" status="PASS">
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:testsLayer.AddEmploy@72c8e7b]" started-at="2024-06-24T20:01:51 IST" name="tearDownSuite" finished-at="2024-06-24T20:01:52 IST" duration-ms="525" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownSuite -->
       </class> <!-- testsLayer.AddEmploy -->
-    </test> <!-- Add Employee  -->
+    </test> <!-- Add Employee -->
+    <test started-at="2024-06-24T20:00:56 IST" name="Administrator Login Test" finished-at="2024-06-24T20:01:51 IST" duration-ms="55174">
+      <class name="testsLayer.AdministratorLoginTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testsLayer.AdministratorLoginTest@55cb6996]" started-at="2024-06-24T20:00:56 IST" name="setup" finished-at="2024-06-24T20:01:13 IST" duration-ms="17278" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTestValidIDPass()[pri:0, instance:testsLayer.AdministratorLoginTest@55cb6996]" started-at="2024-06-24T20:01:13 IST" name="loginTestValidIDPass" finished-at="2024-06-24T20:01:50 IST" duration-ms="37221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestValidIDPass -->
+        <test-method is-config="true" signature="captureScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:testsLayer.AdministratorLoginTest@55cb6996]" started-at="2024-06-24T20:01:50 IST" name="captureScreenshotOnFailure" finished-at="2024-06-24T20:01:50 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTestValidIDPass status=SUCCESS method=AdministratorLoginTest.loginTestValidIDPass()[pri:0, instance:testsLayer.AdministratorLoginTest@55cb6996] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshotOnFailure -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testsLayer.AdministratorLoginTest@55cb6996]" started-at="2024-06-24T20:01:50 IST" name="tearDown" finished-at="2024-06-24T20:01:51 IST" duration-ms="663" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testsLayer.AdministratorLoginTest -->
+    </test> <!-- Administrator Login Test -->
   </suite> <!-- DeomSuite -->
 </testng-results>

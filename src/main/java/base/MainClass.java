@@ -1,10 +1,8 @@
 package base;
 
-import java.awt.Dimension;
-import java.awt.Toolkit;
+
 import java.nio.file.Paths;
 import java.util.Arrays;
-
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserContext;
 import com.microsoft.playwright.BrowserType;

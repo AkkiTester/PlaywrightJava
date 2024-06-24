@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-DeomSuite" class="navigator-link ">
-                    <span>C:\Users\ADMIN\eclipse-workspace\PlaywrightPOM\testrun2.xml</span>
+                    <span>C:\Users\ADMIN\eclipse-workspace\PlaywrightPOM\testRunParallel.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods, 1 failed,   8 passed</span>
+                    <span class="method-stats">9 methods, 2 failed,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,6 +101,11 @@
                       <a href="#" panel-name="suite-DeomSuite" class="show-methods failed suite-DeomSuite"> (show)</a> <!-- show-methods failed suite-DeomSuite -->
                     </span>
                     <div class="method-list-content failed suite-DeomSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DeomSuite" title="testsLayer.AddEmploy" class="method navigator-link" hash-for-method="AddEmployeeTest">AddEmployeeTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-DeomSuite" title="testsLayer.LoginTestInvalidID" class="method navigator-link" hash-for-method="loginTestInValidIDPass">loginTestInValidIDPass</a> <!-- method navigator-link -->
@@ -117,17 +122,7 @@
                     <div class="method-list-content passed suite-DeomSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-DeomSuite" title="testsLayer.AddEmploy" class="method navigator-link" hash-for-method="AddEmployeeTest">AddEmployeeTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-DeomSuite" title="testsLayer.LoginPageTest" class="method navigator-link" hash-for-method="loginTestValidIDPass">loginTestValidIDPass</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-DeomSuite" title="testsLayer.LoginDDT" class="method navigator-link" hash-for-method="loginTestValidIDPass(Admina, Admina, login, Invalid ID and Pass)">loginTestValidIDPass(Admina, Admina, login, Invalid ID and Pass)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -137,12 +132,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DeomSuite" title="testsLayer.LoginDDT" class="method navigator-link" hash-for-method="loginTestValidIDPass(Admin, admin123, dashboard, Valid ID and Pass)">loginTestValidIDPass(Admin, admin123, dashboard, Valid ID and Pass)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-DeomSuite" title="testsLayer.LoginDDT" class="method navigator-link" hash-for-method="loginTestValidIDPass(AAAA, admin123, login, Invalid ID Valid Pass)">loginTestValidIDPass(AAAA, admin123, login, Invalid ID Valid Pass)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-DeomSuite" title="testsLayer.LoginDDT" class="method navigator-link" hash-for-method="loginTestValidIDPass(Admin, admin123, dashboard, Valid ID and Pass)">loginTestValidIDPass(Admin, admin123, dashboard, Valid ID and Pass)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-DeomSuite" title="testsLayer.LoginDDT" class="method navigator-link" hash-for-method="loginTestValidIDPass(Admina, Admina, login, Invalid ID and Pass)">loginTestValidIDPass(Admina, Admina, login, Invalid ID and Pass)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -170,6 +170,30 @@
           <div class="suite-DeomSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
+              <span class="class-name">testsLayer.AddEmploy</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddEmployeeTest">
+                  </a> <!-- AddEmployeeTest -->
+                  <span class="method-name">AddEmployeeTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at testsLayer.AddEmploy.AddEmployeeTest(AddEmploy.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 19 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DeomSuite-class-failed -->
+          <div class="suite-DeomSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">testsLayer.LoginTestInvalidID</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -179,9 +203,13 @@
                   </a> <!-- loginTestInValidIDPass -->
                   <span class="method-name">loginTestInValidIDPass</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at testsLayer.LoginTestInvalidID.loginTestInValidIDPass(LoginTestInvalidID.java:42)
+	at testsLayer.LoginTestInvalidID.loginTestInValidIDPass(LoginTestInvalidID.java:34)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 19 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -198,21 +226,6 @@
                   <a name="loginTestValidIDPass">
                   </a> <!-- loginTestValidIDPass -->
                   <span class="method-name">loginTestValidIDPass</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-DeomSuite-class-passed -->
-          <div class="suite-DeomSuite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testsLayer.AddEmploy</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="AddEmployeeTest">
-                  </a> <!-- AddEmployeeTest -->
-                  <span class="method-name">AddEmployeeTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -255,18 +268,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTestValidIDPass(Admina, Admina, login, Invalid ID and Pass)">
-                  </a> <!-- loginTestValidIDPass(Admina, Admina, login, Invalid ID and Pass) -->
-                  <span class="method-name">loginTestValidIDPass</span>
-                  <span class="parameters">(Admina,Admina,login,Invalid ID and Pass)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="loginTestValidIDPass(Admin, admin, login, Valid ID Invalid Pass)">
                   </a> <!-- loginTestValidIDPass(Admin, admin, login, Valid ID Invalid Pass) -->
                   <span class="method-name">loginTestValidIDPass</span>
                   <span class="parameters">(Admin,admin,login,Valid ID Invalid Pass)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTestValidIDPass(Admin, admin123, dashboard, Valid ID and Pass)">
+                  </a> <!-- loginTestValidIDPass(Admin, admin123, dashboard, Valid ID and Pass) -->
+                  <span class="method-name">loginTestValidIDPass</span>
+                  <span class="parameters">(Admin,admin123,dashboard,Valid ID and Pass)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -279,10 +292,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTestValidIDPass(Admin, admin123, dashboard, Valid ID and Pass)">
-                  </a> <!-- loginTestValidIDPass(Admin, admin123, dashboard, Valid ID and Pass) -->
+                  <a name="loginTestValidIDPass(Admina, Admina, login, Invalid ID and Pass)">
+                  </a> <!-- loginTestValidIDPass(Admina, Admina, login, Invalid ID and Pass) -->
                   <span class="method-name">loginTestValidIDPass</span>
-                  <span class="parameters">(Admin,admin123,dashboard,Valid ID and Pass)</span>
+                  <span class="parameters">(Admina,Admina,login,Invalid ID and Pass)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -290,44 +303,49 @@
         </div> <!-- panel DeomSuite -->
         <div panel-name="test-xml-DeomSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ADMIN\eclipse-workspace\PlaywrightPOM\testrun2.xml</span>
+            <span class="header-content">C:\Users\ADMIN\eclipse-workspace\PlaywrightPOM\testRunParallel.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;DeomSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Login Test&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;DeomSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;LoginTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testsLayer.LoginPageTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Login Test --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;LoginTestDDT&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;testsLayer.LoginDDT&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- LoginTestDDT --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Login Test Invalid ID&quot;&gt;
+  &lt;/test&gt; &lt;!-- LoginTest --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;LoginTestInvalidID&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testsLayer.LoginTestInvalidID&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Login Test Invalid ID --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Login Administrator&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;testsLayer.AdministratorLoginTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Login Administrator --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Admin System User Search&quot;&gt;
+  &lt;/test&gt; &lt;!-- LoginTestInvalidID --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Admin System User Search&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testsLayer.AdminSystemUserSearch&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Admin System User Search --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Add Employee &quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;LoginDDT&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testsLayer.LoginDDT&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LoginDDT --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Administrator Login Test&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testsLayer.AdministratorLoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Administrator Login Test --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Add Employee&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testsLayer.AddEmploy&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Add Employee  --&gt;
+  &lt;/test&gt; &lt;!-- Add Employee --&gt;
 &lt;/suite&gt; &lt;!-- DeomSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -339,22 +357,22 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Login Test (1 class)</span>
+                <span class="test-name">LoginTest (1 class)</span>
               </li>
               <li>
-                <span class="test-name">LoginTestDDT (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Login Test Invalid ID (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Login Administrator (1 class)</span>
+                <span class="test-name">LoginTestInvalidID (1 class)</span>
               </li>
               <li>
                 <span class="test-name">Admin System User Search (1 class)</span>
               </li>
               <li>
-                <span class="test-name">Add Employee  (1 class)</span>
+                <span class="test-name">LoginDDT (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Administrator Login Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Add Employee (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -382,46 +400,46 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(9);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'AddEmployeeTest')
-data.setCell(0, 2, 'testsLayer.AddEmploy')
-data.setCell(0, 3, 8915);
+data.setCell(0, 1, 'loginTestValidIDPass')
+data.setCell(0, 2, 'testsLayer.AdministratorLoginTest')
+data.setCell(0, 3, 37221);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginTestValidIDPass')
-data.setCell(1, 2, 'testsLayer.AdministratorLoginTest')
-data.setCell(1, 3, 7522);
+data.setCell(1, 1, 'AddEmployeeTest')
+data.setCell(1, 2, 'testsLayer.AddEmploy')
+data.setCell(1, 3, 16975);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginTestValidIDPass')
-data.setCell(2, 2, 'testsLayer.LoginDDT')
-data.setCell(2, 3, 6853);
+data.setCell(2, 1, 'test')
+data.setCell(2, 2, 'testsLayer.AdminSystemUserSearch')
+data.setCell(2, 3, 7186);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'test')
-data.setCell(3, 2, 'testsLayer.AdminSystemUserSearch')
-data.setCell(3, 3, 6588);
+data.setCell(3, 1, 'loginTestValidIDPass')
+data.setCell(3, 2, 'testsLayer.LoginDDT')
+data.setCell(3, 3, 5560);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'loginTestValidIDPass')
 data.setCell(4, 2, 'testsLayer.LoginPageTest')
-data.setCell(4, 3, 2519);
+data.setCell(4, 3, 3310);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'loginTestInValidIDPass')
-data.setCell(5, 2, 'testsLayer.LoginTestInvalidID')
-data.setCell(5, 3, 2464);
+data.setCell(5, 1, 'loginTestValidIDPass')
+data.setCell(5, 2, 'testsLayer.LoginDDT')
+data.setCell(5, 3, 2397);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'loginTestValidIDPass')
-data.setCell(6, 2, 'testsLayer.LoginDDT')
-data.setCell(6, 3, 2013);
+data.setCell(6, 1, 'loginTestInValidIDPass')
+data.setCell(6, 2, 'testsLayer.LoginTestInvalidID')
+data.setCell(6, 3, 2354);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'loginTestValidIDPass')
 data.setCell(7, 2, 'testsLayer.LoginDDT')
-data.setCell(7, 3, 1638);
+data.setCell(7, 3, 2344);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'loginTestValidIDPass')
 data.setCell(8, 2, 'testsLayer.LoginDDT')
-data.setCell(8, 3, 1448);
+data.setCell(8, 3, 1971);
 window.suiteTableData['DeomSuite']= { tableData: data, tableDiv: 'times-div-DeomSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 39 seconds</span>
+              <span class="suite-total-time">Total running time: 55 seconds</span>
               <div id="times-div-DeomSuite">
               </div> <!-- times-div-DeomSuite -->
             </div> <!-- times-div -->
@@ -454,147 +472,181 @@ return data;
               </div> <!-- configuration-suite before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">testsLayer.LoginPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">848 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <span class="method-name">loginTestValidIDPass</span>
-                <span class="method-start">20337 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">captureScreenshotOnFailure([TestResult name=loginTestValidIDPass status=SUCCESS method=LoginPageTest.loginTestValidIDPass()[pri...)</span>
-                <span class="method-start">22885 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-test after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">22933 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testsLayer.LoginDDT</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">24753 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <span class="method-name">loginTestValidIDPass(Admin, admin123, dashboard, Valid ID and Pass)</span>
-                <span class="method-start">35106 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">captureScreenshotOnFailure([TestResult name=loginTestValidIDPass status=SUCCESS method=LoginDDT.loginTestValidIDPass(java.lang....)</span>
-                <span class="method-start">41962 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">loginTestValidIDPass(Admin, admin, login, Valid ID Invalid Pass)</span>
-                <span class="method-start">41964 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">captureScreenshotOnFailure([TestResult name=loginTestValidIDPass status=SUCCESS method=LoginDDT.loginTestValidIDPass(java.lang....)</span>
-                <span class="method-start">43986 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">loginTestValidIDPass(AAAA, admin123, login, Invalid ID Valid Pass)</span>
-                <span class="method-start">43987 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">captureScreenshotOnFailure([TestResult name=loginTestValidIDPass status=SUCCESS method=LoginDDT.loginTestValidIDPass(java.lang....)</span>
-                <span class="method-start">45444 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">loginTestValidIDPass(Admina, Admina, login, Invalid ID and Pass)</span>
-                <span class="method-start">45450 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">captureScreenshotOnFailure([TestResult name=loginTestValidIDPass status=SUCCESS method=LoginDDT.loginTestValidIDPass(java.lang....)</span>
-                <span class="method-start">47093 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-test after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">47097 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
               <div class="chronological-class-name">testsLayer.LoginTestInvalidID</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">48479 ms</span>
+                <span class="method-start">671 ms</span>
               </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testsLayer.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">672 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testsLayer.LoginTestInvalidID</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">loginTestInValidIDPass</span>
-                <span class="method-start">58640 ms</span>
+                <span class="method-start">14786 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">captureScreenshotOnFailure([TestResult name=loginTestInValidIDPass status=FAILURE method=LoginTestInvalidID.loginTestInValidIDP...)</span>
-                <span class="method-start">61109 ms</span>
+                <span class="method-start">17157 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testsLayer.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginTestValidIDPass</span>
+                <span class="method-start">17741 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshotOnFailure([TestResult name=loginTestValidIDPass status=SUCCESS method=LoginPageTest.loginTestValidIDPass()[pri...)</span>
+                <span class="method-start">21054 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">64480 ms</span>
+                <span class="method-start">21065 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">testsLayer.AdministratorLoginTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">65611 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <span class="method-name">loginTestValidIDPass</span>
-                <span class="method-start">76578 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">captureScreenshotOnFailure([TestResult name=loginTestValidIDPass status=SUCCESS method=AdministratorLoginTest.loginTestValidIDP...)</span>
-                <span class="method-start">84104 ms</span>
-              </div> <!-- configuration-method after -->
+              <div class="chronological-class-name">testsLayer.LoginTestInvalidID</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">84105 ms</span>
+                <span class="method-start">26808 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testsLayer.AdminSystemUserSearch</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
+                <span class="method-name">setup(edge)</span>
+                <span class="method-start">26980 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testsLayer.LoginDDT</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">85464 ms</span>
+                <span class="method-start">27108 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">test</span>
-                <span class="method-start">91470 ms</span>
+                <span class="method-name">loginTestValidIDPass(Admin, admin123, dashboard, Valid ID and Pass)</span>
+                <span class="method-start">37424 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">captureScreenshotOnFailure([TestResult name=test status=SUCCESS method=AdminSystemUserSearch.test()[pri:0, instance:testsLayer....)</span>
-                <span class="method-start">98060 ms</span>
+                <span class="method-name">captureScreenshotOnFailure([TestResult name=loginTestValidIDPass status=SUCCESS method=LoginDDT.loginTestValidIDPass(java.lang....)</span>
+                <span class="method-start">42987 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">loginTestValidIDPass(Admin, admin, login, Valid ID Invalid Pass)</span>
+                <span class="method-start">42994 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testsLayer.AdminSystemUserSearch</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test</span>
+                <span class="method-start">43034 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testsLayer.LoginDDT</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshotOnFailure([TestResult name=loginTestValidIDPass status=SUCCESS method=LoginDDT.loginTestValidIDPass(java.lang....)</span>
+                <span class="method-start">44993 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">loginTestValidIDPass(AAAA, admin123, login, Invalid ID Valid Pass)</span>
+                <span class="method-start">44996 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshotOnFailure([TestResult name=loginTestValidIDPass status=SUCCESS method=LoginDDT.loginTestValidIDPass(java.lang....)</span>
+                <span class="method-start">47343 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">loginTestValidIDPass(Admina, Admina, login, Invalid ID and Pass)</span>
+                <span class="method-start">47344 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshotOnFailure([TestResult name=loginTestValidIDPass status=SUCCESS method=LoginDDT.loginTestValidIDPass(java.lang....)</span>
+                <span class="method-start">49742 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">98068 ms</span>
+                <span class="method-start">49743 ms</span>
               </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testsLayer.AdminSystemUserSearch</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshotOnFailure([TestResult name=test status=SUCCESS method=AdminSystemUserSearch.test()[pri:0, instance:testsLayer....)</span>
+                <span class="method-start">50222 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">50224 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testsLayer.AdministratorLoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">51277 ms</span>
+              </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testsLayer.AddEmploy</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">99820 ms</span>
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">60025 ms</span>
               </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testsLayer.AdministratorLoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <span class="method-name">loginTestValidIDPass</span>
+                <span class="method-start">68556 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testsLayer.AddEmploy</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">AddEmployeeTest</span>
-                <span class="method-start">108362 ms</span>
+                <span class="method-start">74416 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">captureScreenshotOnFailure([TestResult name=AddEmployeeTest status=SUCCESS method=AddEmploy.AddEmployeeTest()[pri:0, instance:t...)</span>
-                <span class="method-start">117285 ms</span>
+                <span class="method-name">captureScreenshotOnFailure([TestResult name=AddEmployeeTest status=FAILURE method=AddEmploy.AddEmployeeTest()[pri:0, instance:t...)</span>
+                <span class="method-start">91393 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">117296 ms</span>
+                <span class="method-start">95945 ms</span>
               </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testsLayer.AdministratorLoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshotOnFailure([TestResult name=loginTestValidIDPass status=SUCCESS method=AdministratorLoginTest.loginTestValidIDP...)</span>
+                <span class="method-start">105784 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">105786 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testsLayer.AddEmploy</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDownSuite</span>
-                <span class="method-start">120750 ms</span>
+                <span class="method-start">106455 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

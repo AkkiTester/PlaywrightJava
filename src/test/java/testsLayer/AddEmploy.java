@@ -1,19 +1,17 @@
 package testsLayer;
 import static org.testng.Assert.assertTrue;
 
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
 
+import org.testng.annotations.Test;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
-
 import baseTest.BaseTestWeb;
 
 public class AddEmploy extends BaseTestWeb {
-	
+	String notificationmassage;
 	@Test
 	public void AddEmployeeTest() {
+		try {
 		createTest("Add Employee Test"+" - "+getBrowserName());
 		log(Status.INFO, "Entering Username ");
 		LoginPage.setUsername();
@@ -30,16 +28,18 @@ public class AddEmploy extends BaseTestWeb {
 		System.out.println(id);
 		PIMPage.clickSaveButton();
 		log(Status.INFO, "Click on save button ");
-		String notificationmassage = PIMPage.getNotification();
+		notificationmassage = PIMPage.getNotification();
 		log(Status.INFO, "Notification -  " +notificationmassage);
+		}catch (Exception e) {
+			log(Status.FAIL, "Add Employee Fail",ExtentColor.RED);
+			assertTrue(false);
+		}
 		if (notificationmassage.contains("Success")){
-//			assertTrue(" Employee Records".equals(MaintanancePage.CheckPurgeHeader()));
-			log(Status.PASS, "Add Employee Pass",ExtentColor.GREEN);
-			assertTrue(true);
+			log(Status.FAIL, "Add Employee Pass",ExtentColor.GREEN);
+			assertTrue(false);
 			
 		}
 		else {
-//			assertEquals("Purge Employee Records",MaintanancePage.CheckPurgeHeader());
 			log(Status.FAIL, "Add Employee Fail",ExtentColor.RED);
 			assertTrue(false);
 			

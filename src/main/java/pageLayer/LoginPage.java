@@ -11,7 +11,7 @@ public class LoginPage  extends MainClass{
 	private String username = "input[name='username']";
 	private String password = "input[name='password']";
 	private String LoginButton = "button[type='submit']";
-	private String SocialLinks = "//div[@class='orangehrm-login-footer-sm']/a";
+	
 	
 	
 	//Constructor

@@ -3,7 +3,6 @@ package Utility;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
-
 import com.microsoft.playwright.ElementHandle;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
@@ -69,10 +68,10 @@ public class GenericFunction extends MainClass {
 		page.locator(element).scrollIntoViewIfNeeded();
 	}
 	
-//	public void windowToVisibleByIndex(int index) {
-//		List<Page> pages = browserContext.pages();
-//		pages.get(index).bringToFront();
-//	}
+	public void windowToVisibleByIndex(int index) {
+		List<Page> pages = browserContext.pages();
+		pages.get(index).bringToFront();
+	}
 	
 /**
  * TimeStamp

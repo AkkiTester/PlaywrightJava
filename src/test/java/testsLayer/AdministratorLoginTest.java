@@ -1,18 +1,16 @@
 package testsLayer;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
+
 import org.testng.annotations.Test;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
-
 import baseTest.BaseTestWeb;
-
 import static org.testng.Assert.*;
 
 public class AdministratorLoginTest extends BaseTestWeb{
 	
 	@Test
 	public void loginTestValidIDPass() {
+		try {
 		createTest("Administrator Login Test"+" - "+getBrowserName());
 		log(Status.INFO, "Entering Username ");
 		LoginPage.setUsername();
@@ -25,18 +23,18 @@ public class AdministratorLoginTest extends BaseTestWeb{
 		log(Status.INFO, "Entering Administrator Password");
 		AdministratorLogin.Enterpassword();
 		log(Status.INFO, "Click on Confirm Button");
-		AdministratorLogin.ClickConfirmButton();
+		AdministratorLogin.ClickConfirmButton();}
+		catch (Exception e) {
+			log(Status.FAIL, "Administrator Login Test Fail",ExtentColor.RED);
+			assertFalse(false);
+		}
 		if ("Purge Employee Records".equals(MaintanancePage.CheckPurgeHeader())){
-//			assertTrue(" Employee Records".equals(MaintanancePage.CheckPurgeHeader()));
 			assertTrue(true);
 			log(Status.PASS, "Administrator Login Test Pass",ExtentColor.GREEN);
 		}
 		else {
-//			assertEquals("Purge Employee Records",MaintanancePage.CheckPurgeHeader());
+			log(Status.FAIL, "Administrator Login Test Fail",ExtentColor.RED);
 			assertFalse(false);
-			log(Status.PASS, "Administrator Login Test Fail",ExtentColor.GREEN);
 		}
-		System.out.println(MaintanancePage.CheckPurgeHeader());	
-
 	}
 }

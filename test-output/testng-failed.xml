@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [DeomSuite]" guice-stage="DEVELOPMENT">
-  <parameter name="browser" value="chrome"/>
-  <test thread-count="5" name="Login Test Invalid ID(failed)">
+<suite thread-count="2" parallel="tests" name="Failed suite [DeomSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="LoginTestInvalidID(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="testsLayer.LoginTestInvalidID">
         <methods>
@@ -15,5 +15,20 @@
         </methods>
       </class> <!-- testsLayer.LoginTestInvalidID -->
     </classes>
-  </test> <!-- Login Test Invalid ID(failed) -->
+  </test> <!-- LoginTestInvalidID(failed) -->
+  <test thread-count="2" parallel="tests" name="Add Employee(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="testsLayer.AddEmploy">
+        <methods>
+          <include name="setupSuite"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="captureScreenshotOnFailure"/>
+          <include name="AddEmployeeTest"/>
+          <include name="tearDownSuite"/>
+        </methods>
+      </class> <!-- testsLayer.AddEmploy -->
+    </classes>
+  </test> <!-- Add Employee(failed) -->
 </suite> <!-- Failed suite [DeomSuite] -->

@@ -3,8 +3,6 @@ package baseTest;
 import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.List;
-
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -19,10 +17,10 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Tracing;
-import com.microsoft.playwright.options.LoadState;
+
+
 
 import base.MainClass;
 import pageLayer.AdminPage;
@@ -159,8 +157,7 @@ public class BaseTestWeb extends MainClass{
 	
 	public String captureSS(String fileName) {
 		try {
-			page.waitForLoadState(LoadState.DOMCONTENTLOADED);
-			Thread.sleep(2500);
+			Thread.sleep(4000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
