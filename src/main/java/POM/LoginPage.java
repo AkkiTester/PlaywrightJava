@@ -10,7 +10,7 @@ import reader.Configreader;
 import static java.lang.reflect.Array.get;
 
 public class LoginPage  extends PlaywrightFactory{
-
+	Page page;
 	// Locators
 	private String username = "input[name='username']";
 	private String password = "input[name='password']";
@@ -65,38 +65,38 @@ public class LoginPage  extends PlaywrightFactory{
 		page.locator("//a[normalize-space()='Logout']").click();
 	}
 
-	public void SocialMediaLinksList(){
-		Locator elements = page.locator(SocialLinks);
-		int count = elements.count();
-		System.out.println(count);
-		List<String> PageName = new ArrayList<>(Arrays.asList("LinkdinPage", "FacebookPage", "TWpage", "YoutubePage"));
-
-		for (int i = 0; i < count; i++) {
-			Locator element = elements.nth(i);
-			String PN =PageName.get(i);
-//			element.click();
-			Page newpage = page.waitForPopup(new Page.WaitForPopupOptions(),()-> {
-				element.click();
-			});
-
-//			System.out.println("Element text: " + element.textContent());
-			// Perform any actions you need on the element
-		}
-		System.out.println(browserContext.pages());
-		// Get the list of open pages
-		List<Page> pages = browserContext.pages();
-
-		// Print the number of open pages
-		System.out.println("Number of open pages: " + pages.size());
-
-	};
-
-//	public void SocialMediaLinksClick(){
+//	public void SocialMediaLinksList(){
+//		Locator elements = page.locator(SocialLinks);
+//		int count = elements.count();
+//		System.out.println(count);
+//		List<String> PageName = new ArrayList<>(Arrays.asList("LinkdinPage", "FacebookPage", "TWpage", "YoutubePage"));
+//
 //		for (int i = 0; i < count; i++) {
 //			Locator element = elements.nth(i);
-//			System.out.println("Element text: " + element.textContent());
+//			String PN =PageName.get(i);
+////			element.click();
+//			Page newpage = page.waitForPopup(new Page.WaitForPopupOptions(),()-> {
+//				element.click();
+//			});
+//
+////			System.out.println("Element text: " + element.textContent());
 //			// Perform any actions you need on the element
 //		}
+//		System.out.println(browserContext.pages());
+//		// Get the list of open pages
+//		List<Page> pages = browserContext.pages();
+//
+//		// Print the number of open pages
+//		System.out.println("Number of open pages: " + pages.size());
+//
 //	};
+//
+////	public void SocialMediaLinksClick(){
+////		for (int i = 0; i < count; i++) {
+////			Locator element = elements.nth(i);
+////			System.out.println("Element text: " + element.textContent());
+////			// Perform any actions you need on the element
+////		}
+////	};
  
 }

@@ -1,4 +1,6 @@
 package tests;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
@@ -8,10 +10,10 @@ import base.BaseTest;
 import static org.testng.Assert.*;
 
 public class AdministratorLoginTest extends BaseTest{
-
+	
 	@Test
 	public void loginTestValidIDPass() {
-		createTest("Administrator Login Test");
+		createTest("Administrator Login Test"+" - "+getBrowserName());
 		log(Status.INFO, "Entering Username ");
 		LoginPage.setUsername();
 		log(Status.INFO, "Entering Password");

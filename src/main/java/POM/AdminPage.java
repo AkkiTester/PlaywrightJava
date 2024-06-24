@@ -1,13 +1,6 @@
 package POM;
-
-import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.markuputils.ExtentColor;
-import com.microsoft.playwright.ElementHandle;
 import com.microsoft.playwright.Page;
-import com.microsoft.playwright.options.ElementState;
 import com.microsoft.playwright.options.WaitForSelectorState;
-
-import Factory.PlaywrightFactory;
 import Utility.GenericFunction;
 
 public class AdminPage {
@@ -36,6 +29,7 @@ public class AdminPage {
 		page.locator(searchButton).click();
 	}
 	
+//	@SuppressWarnings("finally")
 	public String serachRecordFound() {
 		try {
 			page.waitForSelector(recordFoundText,new Page.WaitForSelectorOptions().setTimeout(1000).setState(WaitForSelectorState.ATTACHED));

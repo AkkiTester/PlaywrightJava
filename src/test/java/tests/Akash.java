@@ -17,14 +17,25 @@ public class Akash {
 		// Create a new browser context
         BrowserContext context = browser.newContext();
 		Page page = context.newPage();
-		page.navigate("https://seleniumbase.io/demo_page");
+		System.out.println(browser.browserType().name());
+		page.navigate("https://the-internet.herokuapp.com/dynamic_loading/1");
+		page.locator("//button[normalize-space()='Start']").click();
+		Boolean visibility = page.locator("//h4[normalize-space()='Hello World!']").isVisible();
+		System.out.println(visibility+"- Befor try");
 		//td[normalize-space()='Text Input Field:']
 			try {
-				page.waitForSelector("//td[normalize-space()='Text Input Field:']",new Page.WaitForSelectorOptions().setTimeout(1000).setState(WaitForSelectorState.ATTACHED));
+				page.waitForSelector("//h4[normalize-space()='Hello World!']",new Page.WaitForSelectorOptions().setTimeout(6000).setState(WaitForSelectorState.VISIBLE));
+				Boolean visibilitytry = page.locator("//h4[normalize-space()='Hello World!']").isVisible();
+				System.out.println(visibilitytry+"- in try");
+//				page.locator("//h4[normalize-space()='Hello World!']").hover();
+				String text = page.locator("//h4[normalize-space()='Hello World!']").innerText();
+				System.out.println(text);
 				System.out.println("try");
 			} catch (Exception e) {
 				System.out.println("catch");
 			}
+			Boolean visibilityafter = page.locator("//h4[normalize-space()='Hello World!']").isVisible();
+			System.out.println(visibilityafter+"- after try");
 			
 		context.close();
 		browser.close();

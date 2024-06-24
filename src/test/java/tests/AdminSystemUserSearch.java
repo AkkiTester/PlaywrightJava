@@ -3,6 +3,8 @@ package tests;
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
@@ -11,10 +13,9 @@ import com.aventstack.extentreports.markuputils.ExtentColor;
 import base.BaseTest;
 
 public class AdminSystemUserSearch extends BaseTest {
-
 	@Test
 	public void test() {
-		createTest("Admin System User Search Test");
+		createTest("Admin System User Search Test"+" - "+getBrowserName());
 		LoginPage.setUsername();
 		log(Status.INFO, "Entering Username ");
 		LoginPage.setPassword();

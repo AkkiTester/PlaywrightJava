@@ -21,6 +21,7 @@ import POM.Dashboard;
 import POM.LoginPage;
 import POM.AdminPage;
 import POM.MaintanancePage;
+import POM.PIMPage;
 import reader.Configreader;
 import reader.ExcelFileReader;
 import Utility.GenericFunction;
@@ -29,7 +30,7 @@ import Utility.GenericFunction;
 public class PlaywrightFactory {
 	
 	Playwright playwright;
-	Browser brows;
+	protected Browser brows;
 	protected BrowserContext browserContext;
 	protected BrowserContext browserContextTwo;
 	protected Page page;
@@ -40,6 +41,7 @@ public class PlaywrightFactory {
 	protected MaintanancePage MaintanancePage;
 	protected Dashboard Dashboard;
 	protected AdminPage AdminPage;
+	protected PIMPage PIMPage;
 	public Configreader prop;
 	public ExcelFileReader excel;
 	
@@ -50,7 +52,7 @@ public class PlaywrightFactory {
 		String browserName = browser.toLowerCase();
 		System.out.println("browser name is :"+ browserName);
 		
-		playwright = Playwright.create(null);
+		playwright = Playwright.create();
 		
 		switch (browserName.toLowerCase()) {
 		case "chromium":

@@ -29,6 +29,11 @@
             <class name="tests.AdminSystemUserSearch"/>
         </classes>
     </test>
+    <test name="Add Employee ">
+        <classes>
+            <class name="tests.AddEmploy"/>
+        </classes>
+    </test>
     
     
 </suite>

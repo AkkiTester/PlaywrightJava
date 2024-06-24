@@ -1,6 +1,7 @@
 package tests;
 import org.testng.Assert;
-
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
@@ -10,10 +11,9 @@ import base.BaseTest;
 
 public class LoginPageTest  extends BaseTest{
 
-
 	@Test
 	public void loginTestValidIDPass() {
-		createTest("Login Test Case Valid Credntial");
+		createTest("Login Test Case Valid Credntial "+" - "+getBrowserName());
 		log(Status.INFO, "Entering Username ");
 		LoginPage.setUsername();
 		log(Status.INFO, "Entering Password ");

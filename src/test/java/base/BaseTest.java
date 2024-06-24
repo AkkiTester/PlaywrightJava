@@ -22,10 +22,12 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Tracing;
+import com.microsoft.playwright.options.LoadState;
 
 import Factory.PlaywrightFactory;
 import POM.LoginPage;
 import POM.AdministratorLogin;
+import POM.PIMPage;
 import POM.MaintanancePage;
 import reader.Configreader;
 import reader.ExcelFileReader;
@@ -39,6 +41,11 @@ public class BaseTest extends PlaywrightFactory{
 //	private static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
 //    protected static ExtentTest test;
     static Page page;
+    
+    
+    public String getBrowserName() {
+    	return brows.browserType().name();
+    }
 	
     @Parameters("browser")
 	@BeforeSuite
@@ -106,6 +113,7 @@ public class BaseTest extends PlaywrightFactory{
 		MaintanancePage = new MaintanancePage(page);
 		Dashboard = new Dashboard(page);
 		AdminPage = new AdminPage(page);
+		PIMPage = new PIMPage(page);
 		excel = new ExcelFileReader();
 		// Start tracing before performing actions
 		browserContext.tracing().start(new Tracing.StartOptions()
@@ -146,7 +154,8 @@ public class BaseTest extends PlaywrightFactory{
 	
 	public String captureSS(String fileName) {
 		try {
-			Thread.sleep(1000);
+			page.waitForLoadState(LoadState.DOMCONTENTLOADED);
+			Thread.sleep(2500);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

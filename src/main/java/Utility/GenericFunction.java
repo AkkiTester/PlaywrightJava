@@ -15,7 +15,7 @@ import Factory.PlaywrightFactory;
 
 
 public class GenericFunction extends PlaywrightFactory {
-	
+	Page page;
 	public GenericFunction(Page page) {
 		this.page = page;
 	}
@@ -69,10 +69,10 @@ public class GenericFunction extends PlaywrightFactory {
 		page.locator(element).scrollIntoViewIfNeeded();
 	}
 	
-	public void windowToVisibleByIndex(int index) {
-		List<Page> pages = browserContext.pages();
-		pages.get(index).bringToFront();
-	}
+//	public void windowToVisibleByIndex(int index) {
+//		List<Page> pages = browserContext.pages();
+//		pages.get(index).bringToFront();
+//	}
 	
 /**
  * TimeStamp

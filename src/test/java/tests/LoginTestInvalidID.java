@@ -4,7 +4,8 @@ import static org.testng.Assert.assertTrue;
 import java.nio.file.Paths;
 
 import org.testng.Assert;
-
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
@@ -14,13 +15,9 @@ import com.microsoft.playwright.Page;
 import base.BaseTest;
 
 public class LoginTestInvalidID  extends BaseTest{
-
-	
-	
-	
 	@Test
 	public void loginTestInValidIDPass() {
-		createTest("Login Test Case InValid Credntial");
+		createTest("Login Test Case InValid Credntial"+" - "+getBrowserName());
 		log(Status.INFO, "Entering Username ");
 		LoginPage.setUsername();
 		log(Status.INFO, "Entering Password ");
