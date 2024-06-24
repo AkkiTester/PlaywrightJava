@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="tests" name="Failed suite [DeomSuite]" guice-stage="DEVELOPMENT">
-  <test thread-count="2" parallel="tests" name="LoginTestInvalidID(failed)">
+<suite thread-count="4" parallel="tests" name="Failed suite [DeomSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="4" parallel="tests" name="LoginTestInvalidID(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
       <class name="testsLayer.LoginTestInvalidID">
@@ -16,19 +16,4 @@
       </class> <!-- testsLayer.LoginTestInvalidID -->
     </classes>
   </test> <!-- LoginTestInvalidID(failed) -->
-  <test thread-count="2" parallel="tests" name="Add Employee(failed)">
-    <parameter name="browser" value="firefox"/>
-    <classes>
-      <class name="testsLayer.AddEmploy">
-        <methods>
-          <include name="setupSuite"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="captureScreenshotOnFailure"/>
-          <include name="AddEmployeeTest"/>
-          <include name="tearDownSuite"/>
-        </methods>
-      </class> <!-- testsLayer.AddEmploy -->
-    </classes>
-  </test> <!-- Add Employee(failed) -->
 </suite> <!-- Failed suite [DeomSuite] -->

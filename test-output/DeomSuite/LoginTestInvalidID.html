@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jun 24 20:00:05 IST 2024</td>
+<td>Started on:</td><td>Mon Jun 24 22:36:53 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>26 seconds (26441 ms)</td>
+<tr><td>Total time:</td><td>80 seconds (80476 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,178 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='testsLayer.LoginTestInvalidID.captureScreenshotOnFailure()'><b>captureScreenshotOnFailure</b><br>Test class: testsLayer.LoginTestInvalidID<br>Parameters: [TestResult name=loginTestInValidIDPass status=FAILURE method=LoginTestInvalidID.loginTestInValidIDPass()[pri:0, instance:testsLayer.LoginTestInvalidID@5a59ca5e] output={null}]</td>
-<td><div><pre>com.microsoft.playwright.PlaywrightException: Error {
-  message=&apos;Target page, context or browser has been closed
-  name=&apos;TargetClosedError
-  stack=&apos;TargetClosedError:Target page, context or browser has been closed
-Error
-    at captureRawStack (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-1036034859044001197\package\lib\utils\stackTrace.js:50:17)
-    at LongStandingScope._race (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-1036034859044001197\package\lib\utils\manualPromise.js:91:52)
-    at LongStandingScope.race (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-1036034859044001197\package\lib\utils\manualPromise.js:84:17)
-    at PageDispatcher._handleCommand (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-1036034859044001197\package\lib\server\dispatchers\dispatcher.js:96:36)
-    at DispatcherConnection.dispatch (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-1036034859044001197\package\lib\server\dispatchers\dispatcher.js:362:39)
-}
-Call log:
-- taking page screenshot
-- waiting for fonts to load...
-- fonts loaded
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-	at com.microsoft.playwright.impl.PageImpl.screenshotImpl(PageImpl.java:1094)
-	at com.microsoft.playwright.impl.PageImpl.lambda$screenshot$65(PageImpl.java:1038)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-	at com.microsoft.playwright.impl.PageImpl.screenshot(PageImpl.java:1038)
-	at baseTest.BaseTestWeb.captureSS(BaseTestWeb.java:170)
-	at baseTest.BaseTestWeb.captureScreenshotOnFailure(BaseTestWeb.java:142)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1589)
-Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
-  message=&apos;Target page, context or browser has been closed
-  name=&apos;TargetClosedError
-  stack=&apos;TargetClosedError:Target page, context or browser has been closed
-Error
-    at captureRawStack (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-1036034859044001197\package\lib\utils\stackTrace.js:50:17)
-    at LongStandingScope._race (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-1036034859044001197\package\lib\utils\manualPromise.js:91:52)
-    at LongStandingScope.race (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-1036034859044001197\package\lib\utils\manualPromise.js:84:17)
-    at PageDispatcher._handleCommand (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-1036034859044001197\package\lib\server\dispatchers\dispatcher.js:96:36)
-    at DispatcherConnection.dispatch (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-1036034859044001197\package\lib\server\dispatchers\dispatcher.js:362:39)
-}
-Call log:
-- taking page screenshot
-- waiting for fonts to load...
-- fonts loaded
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:101)
-	at com.microsoft.playwright.impl.BrowserImpl.closeImpl(BrowserImpl.java:89)
-	at com.microsoft.playwright.impl.BrowserImpl.lambda$close$0(BrowserImpl.java:72)
-	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
-	at com.microsoft.playwright.impl.BrowserImpl.close(BrowserImpl.java:72)
-	at com.microsoft.playwright.Browser.close(Browser.java:1183)
-	at baseTest.BaseTestWeb.tearDown(BaseTestWeb.java:133)
-	... 7 more
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace703975881", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace703975881'><pre>com.microsoft.playwright.PlaywrightException: Error {
-  message=&apos;Target page, context or browser has been closed
-  name=&apos;TargetClosedError
-  stack=&apos;TargetClosedError:Target page, context or browser has been closed
-Error
-    at captureRawStack (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-1036034859044001197\package\lib\utils\stackTrace.js:50:17)
-    at LongStandingScope._race (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-1036034859044001197\package\lib\utils\manualPromise.js:91:52)
-    at LongStandingScope.race (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-1036034859044001197\package\lib\utils\manualPromise.js:84:17)
-    at PageDispatcher._handleCommand (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-1036034859044001197\package\lib\server\dispatchers\dispatcher.js:96:36)
-    at DispatcherConnection.dispatch (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-1036034859044001197\package\lib\server\dispatchers\dispatcher.js:362:39)
-}
-Call log:
-- taking page screenshot
-- waiting for fonts to load...
-- fonts loaded
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-	at com.microsoft.playwright.impl.PageImpl.screenshotImpl(PageImpl.java:1094)
-	at com.microsoft.playwright.impl.PageImpl.lambda$screenshot$65(PageImpl.java:1038)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-	at com.microsoft.playwright.impl.PageImpl.screenshot(PageImpl.java:1038)
-	at baseTest.BaseTestWeb.captureSS(BaseTestWeb.java:170)
-	at baseTest.BaseTestWeb.captureScreenshotOnFailure(BaseTestWeb.java:142)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:779)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:755)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1589)
-Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
-  message=&apos;Target page, context or browser has been closed
-  name=&apos;TargetClosedError
-  stack=&apos;TargetClosedError:Target page, context or browser has been closed
-Error
-    at captureRawStack (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-1036034859044001197\package\lib\utils\stackTrace.js:50:17)
-    at LongStandingScope._race (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-1036034859044001197\package\lib\utils\manualPromise.js:91:52)
-    at LongStandingScope.race (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-1036034859044001197\package\lib\utils\manualPromise.js:84:17)
-    at PageDispatcher._handleCommand (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-1036034859044001197\package\lib\server\dispatchers\dispatcher.js:96:36)
-    at DispatcherConnection.dispatch (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-1036034859044001197\package\lib\server\dispatchers\dispatcher.js:362:39)
-}
-Call log:
-- taking page screenshot
-- waiting for fonts to load...
-- fonts loaded
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:101)
-	at com.microsoft.playwright.impl.BrowserImpl.closeImpl(BrowserImpl.java:89)
-	at com.microsoft.playwright.impl.BrowserImpl.lambda$close$0(BrowserImpl.java:72)
-	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
-	at com.microsoft.playwright.impl.BrowserImpl.close(BrowserImpl.java:72)
-	at com.microsoft.playwright.Browser.close(Browser.java:1183)
-	at baseTest.BaseTestWeb.tearDown(BaseTestWeb.java:133)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:661)
-	at org.testng.TestRunner.afterRun(TestRunner.java:904)
-	at org.testng.TestRunner.run(TestRunner.java:622)
-	... 7 more
-</pre></div></td>
-<td>9</td>
-<td>testsLayer.LoginTestInvalidID@5a59ca5e</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -256,8 +84,8 @@ Call log:
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1589)
-... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1768532608", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1768532608'><pre>java.lang.AssertionError: expected [true] but found [false]
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1517778985", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1517778985'><pre>java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertTrue(Assert.java:57)
@@ -284,8 +112,8 @@ Call log:
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1589)
 </pre></div></td>
-<td>2</td>
-<td>testsLayer.LoginTestInvalidID@5a59ca5e</td></tr>
+<td>8</td>
+<td>testsLayer.LoginTestInvalidID@5c80cf32</td></tr>
 </table><p>
 </body>
 </html>

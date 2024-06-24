@@ -3,7 +3,7 @@ package pageLayer;
 import com.microsoft.playwright.Page;
 
 public class AdministratorLogin {
-Page page;
+	private Page page;
 	
 	// Locators
 	private String PasswordBox = "input[type='password']";

@@ -6,7 +6,7 @@
 	
     <test name="Login Test">
         <classes>
-            <class name="testsLayer.LoginTestInvalidID"/>
+            <class name="testsLayer.LoginPageTest"/>
         </classes>
     </test>
 </suite>

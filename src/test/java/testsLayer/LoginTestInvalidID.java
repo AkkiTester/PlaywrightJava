@@ -14,10 +14,10 @@ public class LoginTestInvalidID  extends BaseTestWeb{
 		try {
 		createTest("Login Test Case InValid Credntial"+" - "+getBrowserName());
 		log(Status.INFO, "Entering Username ");
-		LoginPage.setUsername();
+		getLoginPage().setUsername();
 		log(Status.INFO, "Entering Password ");
-		LoginPage.setPassword();
-		LoginPage.ClickLoginButton();
+		getLoginPage().setPassword();
+		getLoginPage().clickLoginButton();
 		log(Status.INFO, "Click On Login Button ");
 		}
 		catch (Exception e) {
@@ -25,7 +25,7 @@ public class LoginTestInvalidID  extends BaseTestWeb{
 			assertTrue(false);
 		}
 		
-		String pageurl = LoginPage.getLoginPageUrl();
+		String pageurl = getLoginPage().getLoginPageUrl();
 		
 		if (pageurl.contains("login")) {
 			log(Status.PASS, "Login Test Case  with InValid Credntial Pass",ExtentColor.GREEN);

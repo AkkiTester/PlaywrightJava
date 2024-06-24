@@ -17,14 +17,14 @@ public class LoginDDT  extends BaseTestWeb{
 	@Test(dataProvider ="LoginData")
 	public void loginTestValidIDPass(String username, String password ,String test,String testname) {
 		try {
-		createTest("Login DDT Test case for "+testname+"  "+getBrowserName());
+		createTest("Login DDT Test case for "+testname+" - "+getBrowserName());
 		log(Status.INFO, "Entering Username ");
-		LoginPage.setUsernameDdt(username);
+		getLoginPage().setUsernameDdt(username);
 		log(Status.INFO, "Entering Password ");
-		LoginPage.setPasswordDdt(password);
+		getLoginPage().setPasswordDdt(password);
 		log(Status.INFO, "Click On Login Button ");
-		LoginPage.ClickLoginButton();
-		pageurl = LoginPage.getLoginPageUrl();}
+		getLoginPage().clickLoginButton();
+		pageurl = getLoginPage().getLoginPageUrl();}
 		catch (Exception e) {
 			log(Status.FAIL, "Login DDT Test case for "+testname, ExtentColor.RED);
 		}
@@ -36,7 +36,7 @@ public class LoginDDT  extends BaseTestWeb{
 		Assert.assertTrue(pageurl.contains(test), "URL does not contain 'dashboard'");
 		try {
 			if ("dashboard".equals(test)) {
-             LoginPage.ClickLogout();}
+             getLoginPage().clickLogout();}
         } catch (Exception e) {
             
         }

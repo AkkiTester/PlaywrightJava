@@ -3,7 +3,7 @@ package pageLayer;
 import com.microsoft.playwright.Page;
 
 public class Dashboard {
-	Page page;
+	private Page page;
 	
 	// Locators
 	private String Maintenance = "//span[contains(normalize-space(),'Maintenance')]";

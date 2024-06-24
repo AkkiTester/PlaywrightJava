@@ -3,7 +3,7 @@ package pageLayer;
 import com.microsoft.playwright.Page;
 
 public class MaintanancePage {
-	Page page;
+	private Page page;
 	
 	// Locators
 		private String PurgeHeader = "//h6[normalize-space()='Purge Employee Records']";

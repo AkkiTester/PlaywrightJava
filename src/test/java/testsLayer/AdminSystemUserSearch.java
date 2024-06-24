@@ -14,23 +14,21 @@ public class AdminSystemUserSearch extends BaseTestWeb {
 	@Test
 	public void test() {
 		createTest("Admin System User Search Test"+" - "+getBrowserName());
-		LoginPage.setUsername();
+		getLoginPage().setUsername();
 		log(Status.INFO, "Entering Username ");
-		LoginPage.setPassword();
+		getLoginPage().setPassword();
 		log(Status.INFO, "Entering Password ");
-		LoginPage.ClickLoginButton();
+		getLoginPage().clickLoginButton();
 		log(Status.INFO, "Click login Button ");
-		Dashboard.ClickAdminSideMenu();
+		getDashboard().ClickAdminSideMenu();
 		log(Status.INFO, "Click Admin side menu ");
-		AdminPage.enterUsername("Admin");
+		getAdminPage().enterUsername("Admin");
 		log(Status.INFO, "Enter Uername ");
-		AdminPage.selectUserRoleByText("Admin");
+		getAdminPage().selectUserRoleByText("Admin");
 		log(Status.INFO, "Select Role");
-		AdminPage.clickSearchButton();
+		getAdminPage().clickSearchButton();
 		log(Status.INFO, "Click Search Button ");
-
-		System.out.println(AdminPage.serachRecordFound()+"----------------------------");
-		if (AdminPage.serachRecordFound().contains("No")) {
+		if (getAdminPage().serachRecordFound().contains("No")) {
 			log(Status.FAIL, "Admin System User Search Test Fail",ExtentColor.RED);
             assertTrue(false);
         } else {

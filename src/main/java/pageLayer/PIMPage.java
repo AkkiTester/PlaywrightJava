@@ -4,8 +4,8 @@ import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.WaitForSelectorState;
 
 public class PIMPage {
+	private Page page;
 	
-	Page page;
 	public PIMPage (Page page) {
 		this.page = page;
 	}
@@ -43,9 +43,9 @@ public class PIMPage {
 		try {
 			page.waitForSelector("//div[@id='oxd-toaster_1']/div/div/div[2]/p[1]",new Page.WaitForSelectorOptions().setTimeout(5000).setState(WaitForSelectorState.VISIBLE));
 			textss = page.locator("//div[@id='oxd-toaster_1']/div/div/div[2]/p[1]").innerText();
-			System.out.println(textss);
+//			System.out.println(textss);
 		} catch (Exception e) {
-			System.out.println("Catch");
+//			System.out.println("Catch");
 			textss = "Not get notification";
 		}
 		return textss;

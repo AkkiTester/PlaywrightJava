@@ -13,22 +13,22 @@ public class AdministratorLoginTest extends BaseTestWeb{
 		try {
 		createTest("Administrator Login Test"+" - "+getBrowserName());
 		log(Status.INFO, "Entering Username ");
-		LoginPage.setUsername();
+		getLoginPage().setUsername();
 		log(Status.INFO, "Entering Password");
-		LoginPage.setPassword();
+		getLoginPage().setPassword();
 		log(Status.INFO, "Click on Login Button");
-		LoginPage.ClickLoginButton();
+		getLoginPage().clickLoginButton();
 		log(Status.INFO, "Click on Maintenance Side Menu");
-		Dashboard.ClickMaintenanceSideMenu();
+		getDashboard().ClickMaintenanceSideMenu();
 		log(Status.INFO, "Entering Administrator Password");
-		AdministratorLogin.Enterpassword();
+		getAdministratorLogin().Enterpassword();
 		log(Status.INFO, "Click on Confirm Button");
-		AdministratorLogin.ClickConfirmButton();}
+		getAdministratorLogin().ClickConfirmButton();}
 		catch (Exception e) {
 			log(Status.FAIL, "Administrator Login Test Fail",ExtentColor.RED);
 			assertFalse(false);
 		}
-		if ("Purge Employee Records".equals(MaintanancePage.CheckPurgeHeader())){
+		if ("Purge Employee Records".equals(getMaintanancePage().CheckPurgeHeader())){
 			assertTrue(true);
 			log(Status.PASS, "Administrator Login Test Pass",ExtentColor.GREEN);
 		}

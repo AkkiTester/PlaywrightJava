@@ -4,7 +4,7 @@ import com.microsoft.playwright.options.WaitForSelectorState;
 import Utility.GenericFunction;
 
 public class AdminPage {
-	Page page;
+	private Page page;
 	GenericFunction utitlity;
 	private String userRoleDropdown = "//label[text()='User Role']/..//following-sibling::div/div";
 	private String usernameInputBox = "//label[text()='Username']/../following-sibling::div/input";
