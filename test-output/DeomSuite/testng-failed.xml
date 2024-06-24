@@ -4,30 +4,16 @@
   <parameter name="browser" value="chrome"/>
   <test thread-count="5" name="Login Test Invalid ID(failed)">
     <classes>
-      <class name="tests.LoginTestInvalidID">
+      <class name="testsLayer.LoginTestInvalidID">
         <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
           <include name="setupSuite"/>
-          <include name="loginTestInValidIDPass"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
           <include name="captureScreenshotOnFailure"/>
+          <include name="loginTestInValidIDPass"/>
           <include name="tearDownSuite"/>
         </methods>
-      </class> <!-- tests.LoginTestInvalidID -->
+      </class> <!-- testsLayer.LoginTestInvalidID -->
     </classes>
   </test> <!-- Login Test Invalid ID(failed) -->
-  <test thread-count="5" name="Add Employee (failed)">
-    <classes>
-      <class name="tests.AddEmploy">
-        <methods>
-          <include name="setup"/>
-          <include name="AddEmployeeTest"/>
-          <include name="tearDown"/>
-          <include name="setupSuite"/>
-          <include name="captureScreenshotOnFailure"/>
-          <include name="tearDownSuite"/>
-        </methods>
-      </class> <!-- tests.AddEmploy -->
-    </classes>
-  </test> <!-- Add Employee (failed) -->
 </suite> <!-- Failed suite [DeomSuite] -->

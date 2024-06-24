@@ -6,32 +6,32 @@
 	
     <test name="Login Test">
         <classes>
-            <class name="tests.LoginPageTest"/>
+            <class name="testsLayer.LoginPageTest"/>
         </classes>
     </test>
      <test name="LoginTestDDT">
         <classes>
-            <class name="tests.LoginDDT"/>
+            <class name="testsLayer.LoginDDT"/>
         </classes>
     </test>
     <test name="Login Test Invalid ID">
         <classes>
-            <class name="tests.LoginTestInvalidID"/>
+            <class name="testsLayer.LoginTestInvalidID"/>
         </classes>
     </test>
     <test name="Login Administrator">
         <classes>
-            <class name="tests.AdministratorLoginTest"/>
+            <class name="testsLayer.AdministratorLoginTest"/>
         </classes>
     </test>
     <test name="Admin System User Search">
         <classes>
-            <class name="tests.AdminSystemUserSearch"/>
+            <class name="testsLayer.AdminSystemUserSearch"/>
         </classes>
     </test>
     <test name="Add Employee ">
         <classes>
-            <class name="tests.AddEmploy"/>
+            <class name="testsLayer.AddEmploy"/>
         </classes>
     </test>
     

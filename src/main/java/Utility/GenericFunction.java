@@ -11,10 +11,10 @@ import com.microsoft.playwright.options.ElementState;
 import com.microsoft.playwright.options.SelectOption;
 import com.microsoft.playwright.options.WaitForSelectorState;
 
-import Factory.PlaywrightFactory;
+import base.MainClass;
 
 
-public class GenericFunction extends PlaywrightFactory {
+public class GenericFunction extends MainClass {
 	Page page;
 	public GenericFunction(Page page) {
 		this.page = page;

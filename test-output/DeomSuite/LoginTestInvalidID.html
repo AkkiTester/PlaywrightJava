@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jun 24 10:22:43 IST 2024</td>
+<td>Started on:</td><td>Mon Jun 24 15:37:06 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>39 seconds (39052 ms)</td>
+<tr><td>Total time:</td><td>92 seconds (92494 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,201 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='tests.LoginTestInvalidID.tearDown()'><b>tearDown</b><br>Test class: tests.LoginTestInvalidID</td>
-<td><div><pre>com.microsoft.playwright.PlaywrightException: Error {
-  message=&apos;Target page, context or browser has been closed
-  name=&apos;TargetClosedError
-  stack=&apos;TargetClosedError: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-8937302487367641495\package\lib\server\dispatchers\dispatcher.js:277:44)
-    at transport.onmessage (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-8937302487367641495\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-8937302487367641495\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:478:21)
-}
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-	at com.microsoft.playwright.impl.TracingImpl.stopChunkImpl(TracingImpl.java:58)
-	at com.microsoft.playwright.impl.TracingImpl.stop(TracingImpl.java:124)
-	at base.BaseTest.tearDown(BaseTest.java:128)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1589)
-Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
-  message=&apos;Target page, context or browser has been closed
-  name=&apos;TargetClosedError
-  stack=&apos;TargetClosedError: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-8937302487367641495\package\lib\server\dispatchers\dispatcher.js:277:44)
-    at transport.onmessage (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-8937302487367641495\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-8937302487367641495\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:478:21)
-}
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
-	... 21 more
-... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace71860477", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace71860477'><pre>com.microsoft.playwright.PlaywrightException: Error {
-  message=&apos;Target page, context or browser has been closed
-  name=&apos;TargetClosedError
-  stack=&apos;TargetClosedError: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-8937302487367641495\package\lib\server\dispatchers\dispatcher.js:277:44)
-    at transport.onmessage (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-8937302487367641495\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-8937302487367641495\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:478:21)
-}
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-	at com.microsoft.playwright.impl.TracingImpl.stopChunkImpl(TracingImpl.java:58)
-	at com.microsoft.playwright.impl.TracingImpl.stop(TracingImpl.java:124)
-	at base.BaseTest.tearDown(BaseTest.java:128)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:661)
-	at org.testng.TestRunner.afterRun(TestRunner.java:904)
-	at org.testng.TestRunner.run(TestRunner.java:622)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1589)
-Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
-  message=&apos;Target page, context or browser has been closed
-  name=&apos;TargetClosedError
-  stack=&apos;TargetClosedError: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-8937302487367641495\package\lib\server\dispatchers\dispatcher.js:277:44)
-    at transport.onmessage (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-8937302487367641495\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-8937302487367641495\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:478:21)
-}
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
-	... 21 more
-</pre></div></td>
-<td>0</td>
-<td>tests.LoginTestInvalidID@5f8e8a9d</td></tr>
-<tr>
-<td title='tests.LoginTestInvalidID.captureScreenshotOnFailure()'><b>captureScreenshotOnFailure</b><br>Test class: tests.LoginTestInvalidID<br>Parameters: [TestResult name=loginTestInValidIDPass status=FAILURE method=LoginTestInvalidID.loginTestInValidIDPass()[pri:0, instance:tests.LoginTestInvalidID@5f8e8a9d] output={null}]</td>
-<td><div><pre>com.microsoft.playwright.PlaywrightException: Error {
-  message=&apos;Target page, context or browser has been closed
-  name=&apos;TargetClosedError
-  stack=&apos;TargetClosedError: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-8937302487367641495\package\lib\server\dispatchers\dispatcher.js:277:44)
-    at transport.onmessage (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-8937302487367641495\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-8937302487367641495\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:478:21)
-}
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-	at com.microsoft.playwright.impl.PageImpl.screenshotImpl(PageImpl.java:1094)
-	at com.microsoft.playwright.impl.PageImpl.lambda$screenshot$65(PageImpl.java:1038)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-	at com.microsoft.playwright.impl.PageImpl.screenshot(PageImpl.java:1038)
-	at base.BaseTest.captureSS(BaseTest.java:167)
-	at base.BaseTest.captureScreenshotOnFailure(BaseTest.java:139)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1589)
-Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
-  message=&apos;Target page, context or browser has been closed
-  name=&apos;TargetClosedError
-  stack=&apos;TargetClosedError: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-8937302487367641495\package\lib\server\dispatchers\dispatcher.js:277:44)
-    at transport.onmessage (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-8937302487367641495\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-8937302487367641495\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:478:21)
-}
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
-	... 34 more
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2075875798", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2075875798'><pre>com.microsoft.playwright.PlaywrightException: Error {
-  message=&apos;Target page, context or browser has been closed
-  name=&apos;TargetClosedError
-  stack=&apos;TargetClosedError: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-8937302487367641495\package\lib\server\dispatchers\dispatcher.js:277:44)
-    at transport.onmessage (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-8937302487367641495\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-8937302487367641495\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:478:21)
-}
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-	at com.microsoft.playwright.impl.PageImpl.screenshotImpl(PageImpl.java:1094)
-	at com.microsoft.playwright.impl.PageImpl.lambda$screenshot$65(PageImpl.java:1038)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-	at com.microsoft.playwright.impl.PageImpl.screenshot(PageImpl.java:1038)
-	at base.BaseTest.captureSS(BaseTest.java:167)
-	at base.BaseTest.captureScreenshotOnFailure(BaseTest.java:139)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:779)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:755)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1589)
-Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
-  message=&apos;Target page, context or browser has been closed
-  name=&apos;TargetClosedError
-  stack=&apos;TargetClosedError: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-8937302487367641495\package\lib\server\dispatchers\dispatcher.js:277:44)
-    at transport.onmessage (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-8937302487367641495\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\ADMIN\AppData\Local\Temp\playwright-java-8937302487367641495\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:478:21)
-}
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
-	... 34 more
-</pre></div></td>
-<td>2</td>
-<td>tests.LoginTestInvalidID@5f8e8a9d</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -271,21 +76,21 @@ Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.LoginTestInvalidID.loginTestInValidIDPass()'><b>loginTestInValidIDPass</b><br>Test class: tests.LoginTestInvalidID</td>
+<td title='testsLayer.LoginTestInvalidID.loginTestInValidIDPass()'><b>loginTestInValidIDPass</b><br>Test class: testsLayer.LoginTestInvalidID</td>
 <td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at tests.LoginTestInvalidID.loginTestInValidIDPass(LoginTestInvalidID.java:34)
+	at testsLayer.LoginTestInvalidID.loginTestInValidIDPass(LoginTestInvalidID.java:42)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1589)
-... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace554652927", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace554652927'><pre>java.lang.AssertionError: expected [true] but found [false]
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1587107163", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1587107163'><pre>java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertTrue(Assert.java:57)
 	at org.testng.Assert.assertTrue(Assert.java:67)
-	at tests.LoginTestInvalidID.loginTestInValidIDPass(LoginTestInvalidID.java:34)
+	at testsLayer.LoginTestInvalidID.loginTestInValidIDPass(LoginTestInvalidID.java:42)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -307,8 +112,8 @@ Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1589)
 </pre></div></td>
-<td>1</td>
-<td>tests.LoginTestInvalidID@5f8e8a9d</td></tr>
+<td>10</td>
+<td>testsLayer.LoginTestInvalidID@5a59ca5e</td></tr>
 </table><p>
 </body>
 </html>

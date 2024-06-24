@@ -14,12 +14,12 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-import Factory.PlaywrightFactory;
+import base.MainClass;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class ExcelFileReader extends PlaywrightFactory {
+public class ExcelFileReader extends MainClass {
 	FileInputStream stream;
 	XSSFWorkbook workBook;
 	XSSFSheet sheet;
